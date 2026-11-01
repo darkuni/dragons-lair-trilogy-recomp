@@ -1,0 +1,19 @@
+# addr name   (applied by tools/apply_refs.py over the generated-code matches)
+800D6D30 KPADRead        # 3-arg wrapper: r6=r7=0, tail-calls KPADiRead
+800D6D40 KPADiRead
+800D7550 KPADInit        # wrapper: KPADInitEx(0,0)
+800D7560 KPADInitEx      # registers the KPAD version string
+8007A5E0 EXIGetID        # EXIInit probes for a debugger (2009 SDK); no EXI bus here
+80044D20 __OSInitAudioSystem   # DSP reset handshake (CC00500A polling)
+80045690 OSSaveContext          # just before OSLoadContext, as in the other SDK builds
+80048B00 ReadFont
+8004BF50 __OSReadROM            # called by ReadFont; host supplies the IPL fonts
+800902D0 WPADGetStatus          # main waits for WPAD_STATE_SETUP (3)
+800915B0 WPADProbe              # (chan, *type): game input loop probes all 4 channels
+80082C40 MEMAllocFromAllocator
+80082C50 MEMFreeToAllocator
+80082C60 MEMInitAllocatorForExpHeap
+800E12D4 dlt_Alloc            # game allocator wrapper (allocator at r13-0x6CC8)
+800635F0 __AXOutQuit            # cancels the AX DSP task and sleeps until the DSP confirms (replaced)
+800617A0 AXQuit
+800665C0 DSPCancelTask

@@ -1,0 +1,9992 @@
+{
+"80004030": [
+"80004030",
+"__set_debug_bba",
+"contra-rebirth-recomp",
+"loose"
+],
+"80004210": [
+"80004210",
+"__init_registers",
+"contra-rebirth-recomp",
+"loose"
+],
+"80004360": [
+"80004360",
+"__init_hardware",
+"contra-rebirth-recomp",
+"strict"
+],
+"80004390": [
+"80004390",
+"__flush_cache",
+"contra-rebirth-recomp",
+"strict"
+],
+"800043C4": [
+"800043C4",
+"memcpy",
+"contra-rebirth-recomp",
+"strict"
+],
+"80004660": [
+"80004660",
+"__fill_mem",
+"contra-rebirth-recomp",
+"strict"
+],
+"80004714": [
+"80004714",
+"memset",
+"contra-rebirth-recomp",
+"prop"
+],
+"8000AD60": [
+"8000AD60",
+"SetLightSetting__Q34nw4r3g3d8G3DStateFRCQ34nw4r3g3d12LightSetting",
+"mylifedarklord-recomp",
+"loose"
+],
+"80042720": [
+"80042720",
+"PPCMfmsr",
+"contra-rebirth-recomp",
+"prop"
+],
+"80042730": [
+"80042730",
+"PPCMtmsr",
+"contra-rebirth-recomp",
+"prop"
+],
+"80042740": [
+"80042740",
+"PPCMfhid0",
+"contra-rebirth-recomp",
+"prop"
+],
+"80042780": [
+"80042780",
+"PPCMtdec",
+"contra-rebirth-recomp",
+"prop"
+],
+"800427A0": [
+"800427A0",
+"PPCHalt",
+"contra-rebirth-recomp",
+"strict"
+],
+"80042820": [
+"80042820",
+"PPCMffpscr",
+"contra-rebirth-recomp",
+"strict"
+],
+"80042840": [
+"80042840",
+"PPCMtfpscr",
+"contra-rebirth-recomp",
+"strict"
+],
+"80042870": [
+"80042870",
+"PPCMfhid2",
+"contra-rebirth-recomp",
+"prop"
+],
+"80042880": [
+"80042880",
+"PPCMthid2",
+"contra-rebirth-recomp",
+"prop"
+],
+"800428A0": [
+"800428A0",
+"PPCDisableSpeculation",
+"contra-rebirth-recomp",
+"strict"
+],
+"800428E0": [
+"800428E0",
+"PPCMthid4",
+"contra-rebirth-recomp",
+"loose"
+],
+"80042930": [
+"80042930",
+"__OSFPRInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80042A60": [
+"80042A60",
+"__OSGetIOSRev",
+"contra-rebirth-recomp",
+"strict"
+],
+"80042AD0": [
+"80042AD0",
+"OSGetConsoleType",
+"contra-rebirth-recomp",
+"loose"
+],
+"80042D30": [
+"80042D30",
+"ClearArena",
+"contra-rebirth-recomp",
+"loose"
+],
+"80042F10": [
+"80042F10",
+"ClearMEM2Arena",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043100": [
+"80043100",
+"InquiryCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043140": [
+"80043140",
+"ReportOSInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043B70": [
+"80043B70",
+"__OSDBIntegrator",
+"contra-rebirth-recomp",
+"strict"
+],
+"80043BB0": [
+"80043BB0",
+"__OSSetExceptionHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"80043BD0": [
+"80043BD0",
+"__OSGetExceptionHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"80043C80": [
+"80043C80",
+"OSDefaultExceptionHandler",
+"contra-rebirth-recomp",
+"strict"
+],
+"80043CE0": [
+"80043CE0",
+"__OSPSInit",
+"contra-rebirth-recomp",
+"strict"
+],
+"80043D40": [
+"80043D40",
+"__OSGetDIConfig",
+"contra-rebirth-recomp",
+"strict"
+],
+"80043D50": [
+"80043D50",
+"OSRegisterVersion",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043D60": [
+"80043D60",
+"OSGetAppGamename",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043DF0": [
+"80043DF0",
+"OSGetAppType",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043E10": [
+"80043E10",
+"__OSInitAlarm",
+"contra-rebirth-recomp",
+"loose"
+],
+"80043E70": [
+"80043E70",
+"OSCreateAlarm",
+"contra-rebirth-recomp",
+"strict"
+],
+"800441D0": [
+"800441D0",
+"OSCancelAlarm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800442F0": [
+"800442F0",
+"DecrementerExceptionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80044570": [
+"80044570",
+"OnReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"80044610": [
+"80044610",
+"OSGetAlarmUserData",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044630": [
+"80044630",
+"__OSCancelInternalAlarms",
+"contra-rebirth-recomp",
+"loose"
+],
+"800446E0": [
+"800446E0",
+"DLInsert",
+"contra-rebirth-recomp",
+"strict"
+],
+"80044790": [
+"80044790",
+"OSAllocFromHeap",
+"contra-rebirth-recomp",
+"loose"
+],
+"80044890": [
+"80044890",
+"OSFreeToHeap",
+"contra-rebirth-recomp",
+"loose"
+],
+"80044910": [
+"80044910",
+"OSSetCurrentHeap",
+"mylifedarklord-recomp",
+"loose"
+],
+"80044A00": [
+"80044A00",
+"OSGetMEM1ArenaHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A10": [
+"80044A10",
+"OSGetMEM2ArenaHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A20": [
+"80044A20",
+"OSGetArenaHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A30": [
+"80044A30",
+"OSGetMEM1ArenaLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A40": [
+"80044A40",
+"OSGetMEM2ArenaLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A50": [
+"80044A50",
+"OSGetArenaLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044A80": [
+"80044A80",
+"OSSetArenaHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044AB0": [
+"80044AB0",
+"OSSetArenaLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"80044AC0": [
+"80044AC0",
+"OSAllocFromMEM1ArenaLo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80044B00": [
+"80044B00",
+"__AIClockInit",
+"contra-rebirth-recomp",
+"strict"
+],
+"80044EF0": [
+"80044EF0",
+"__OSStopAudioSystem",
+"contra-rebirth-recomp",
+"strict"
+],
+"80044FC0": [
+"80044FC0",
+"DCEnable",
+"contra-rebirth-recomp",
+"strict"
+],
+"80044FE0": [
+"80044FE0",
+"DCInvalidateRange",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045010": [
+"80045010",
+"DCFlushRange",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045040": [
+"80045040",
+"DCStoreRange",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045070": [
+"80045070",
+"DCFlushRangeNoSync",
+"contra-rebirth-recomp",
+"strict"
+],
+"800450A0": [
+"800450A0",
+"DCZeroRange",
+"contra-rebirth-recomp",
+"strict"
+],
+"800450D0": [
+"800450D0",
+"ICInvalidateRange",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045110": [
+"80045110",
+"ICFlashInvalidate",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045120": [
+"80045120",
+"ICEnable",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045140": [
+"80045140",
+"LCDisable",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045170": [
+"80045170",
+"DMAErrorHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"800453B0": [
+"800453B0",
+"__OSLoadFPUContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"800454E0": [
+"800454E0",
+"__OSSaveFPUContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045620": [
+"80045620",
+"OSSetCurrentContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045680": [
+"80045680",
+"OSGetCurrentContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045710": [
+"80045710",
+"OSLoadContext",
+"contra-rebirth-recomp",
+"prop"
+],
+"800457F0": [
+"800457F0",
+"OSGetStackPointer",
+"contra-rebirth-recomp",
+"prop"
+],
+"80045800": [
+"80045800",
+"OSSwitchFiber",
+"contra-rebirth-recomp",
+"prop"
+],
+"80045830": [
+"80045830",
+"OSSwitchFiberEx",
+"contra-rebirth-recomp",
+"prop"
+],
+"80045860": [
+"80045860",
+"OSClearContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045890": [
+"80045890",
+"OSInitContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045BB0": [
+"80045BB0",
+"OSSwitchFPUContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"80045C80": [
+"80045C80",
+"OSReport",
+"contra-rebirth-recomp",
+"prop"
+],
+"80045D00": [
+"80045D00",
+"OSPanic",
+"contra-rebirth-recomp",
+"prop"
+],
+"80045E30": [
+"80045E30",
+"OSSetErrorHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80046540": [
+"80046540",
+"Utf16ToArg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800468C0": [
+"800468C0",
+"__OSGetExecParams",
+"contra-rebirth-recomp",
+"strict"
+],
+"80047100": [
+"80047100",
+"__OSLaunchMenu",
+"contra-rebirth-recomp",
+"strict"
+],
+"80047930": [
+"80047930",
+"__OSBootDol",
+"contra-rebirth-recomp",
+"loose"
+],
+"80047B10": [
+"80047B10",
+"ScreenReport",
+"contra-rebirth-recomp",
+"strict"
+],
+"80047E40": [
+"80047E40",
+"ConfigureVideo",
+"contra-rebirth-recomp",
+"strict"
+],
+"80048150": [
+"80048150",
+"Halt",
+"contra-rebirth-recomp",
+"loose"
+],
+"80048740": [
+"80048740",
+"GetFontCode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80048A30": [
+"80048A30",
+"OSGetFontEncode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80048A80": [
+"80048A80",
+"OSSetFontEncode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80048E10": [
+"80048E10",
+"OSLoadFont",
+"contra-rebirth-recomp",
+"loose"
+],
+"80048F30": [
+"80048F30",
+"ParseStringS",
+"contra-rebirth-recomp",
+"loose"
+],
+"80049480": [
+"80049480",
+"ExpandFontSheet",
+"contra-rebirth-recomp",
+"strict"
+],
+"800496F0": [
+"800496F0",
+"OSInitFont",
+"contra-rebirth-recomp",
+"loose"
+],
+"800498D0": [
+"800498D0",
+"OSGetFontTexture",
+"contra-rebirth-recomp",
+"loose"
+],
+"80049A20": [
+"80049A20",
+"OSDisableInterrupts",
+"contra-rebirth-recomp",
+"prop"
+],
+"80049A40": [
+"80049A40",
+"OSEnableInterrupts",
+"contra-rebirth-recomp",
+"prop"
+],
+"80049A60": [
+"80049A60",
+"OSRestoreInterrupts",
+"contra-rebirth-recomp",
+"prop"
+],
+"80049A90": [
+"80049A90",
+"__OSSetInterruptHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"80049AB0": [
+"80049AB0",
+"__OSGetInterruptHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"80049AC0": [
+"80049AC0",
+"__OSInterruptInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80049B90": [
+"80049B90",
+"SetInterruptMask",
+"contra-rebirth-recomp",
+"strict"
+],
+"80049DF0": [
+"80049DF0",
+"__OSMaskInterrupts",
+"contra-rebirth-recomp",
+"strict"
+],
+"80049E70": [
+"80049E70",
+"__OSUnmaskInterrupts",
+"contra-rebirth-recomp",
+"strict"
+],
+"80049EF0": [
+"80049EF0",
+"__OSDispatchInterrupt",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004A1F0": [
+"8004A1F0",
+"__OSModuleInit",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A210": [
+"8004A210",
+"OSInitMessageQueue",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A270": [
+"8004A270",
+"OSSendMessage",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A340": [
+"8004A340",
+"OSReceiveMessage",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A420": [
+"8004A420",
+"OSJamMessage",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A4F0": [
+"8004A4F0",
+"OSGetPhysicalMem2Size",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A500": [
+"8004A500",
+"OSGetConsoleSimulatedMem1Size",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A510": [
+"8004A510",
+"OSGetConsoleSimulatedMem2Size",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A520": [
+"8004A520",
+"OnShutdown",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A560": [
+"8004A560",
+"MEMIntrruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004A5B0": [
+"8004A5B0",
+"ConfigMEM1_24MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A630": [
+"8004A630",
+"ConfigMEM2_52MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A710": [
+"8004A710",
+"ConfigMEM2_56MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A7F0": [
+"8004A7F0",
+"ConfigMEM2_64MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A8A0": [
+"8004A8A0",
+"ConfigMEM2_112MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004A980": [
+"8004A980",
+"ConfigMEM2_128MB",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004AA30": [
+"8004AA30",
+"RealMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004AA50": [
+"8004AA50",
+"BATConfig",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004AB70": [
+"8004AB70",
+"__OSRestoreCodeExecOnMEM1",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004ABC0": [
+"8004ABC0",
+"__OSInitMemoryProtection",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004AC90": [
+"8004AC90",
+"OSInitMutex",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004ACD0": [
+"8004ACD0",
+"OSLockMutex",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004ADB0": [
+"8004ADB0",
+"OSUnlockMutex",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004AE80": [
+"8004AE80",
+"__OSUnlockAllMutex",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004AEF0": [
+"8004AEF0",
+"__OSReboot",
+"castlelvania-rebirth-recomp",
+"loose"
+],
+"8004AF80": [
+"8004AF80",
+"OSRegisterShutdownFunction",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B010": [
+"8004B010",
+"__OSCallShutdownFunctions",
+"castlelvania-rebirth-recomp",
+"loose"
+],
+"8004B240": [
+"8004B240",
+"__OSGetDiscState",
+"mylifedarklord-recomp",
+"strict"
+],
+"8004B2B0": [
+"8004B2B0",
+"OSShutdownSystem",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B3D0": [
+"8004B3D0",
+"OSRestart",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B4B0": [
+"8004B4B0",
+"__OSReturnToMenu",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B740": [
+"8004B740",
+"OSReturnToMenu",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004B7C0": [
+"8004B7C0",
+"__OSReturnToMenuForError",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B870": [
+"8004B870",
+"__OSHotResetForError",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B8D0": [
+"8004B8D0",
+"OSGetResetCode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B900": [
+"8004B900",
+"OSResetSystem",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004B920": [
+"8004B920",
+"WriteSramCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004BA60": [
+"8004BA60",
+"__OSInitSram",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004BC60": [
+"8004BC60",
+"UnlockSram",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004BF40": [
+"8004BF40",
+"__OSSyncSram",
+"castlelvania-rebirth-recomp",
+"prop"
+],
+"8004C080": [
+"8004C080",
+"OSGetWirelessID",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004C100": [
+"8004C100",
+"OSSetWirelessID",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004C1A0": [
+"8004C1A0",
+"__OSGetRTCFlags",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004C2C0": [
+"8004C2C0",
+"__OSClearRTCFlags",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004C3F0": [
+"8004C3F0",
+"__OSInitSystemCall",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004C460": [
+"8004C460",
+"__OSThreadInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004C6F0": [
+"8004C6F0",
+"OSInitThreadQueue",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004C700": [
+"8004C700",
+"OSGetCurrentThread",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004C710": [
+"8004C710",
+"OSIsThreadTerminated",
+"mylifedarklord-recomp",
+"strict"
+],
+"8004C740": [
+"8004C740",
+"OSDisableScheduler",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004C780": [
+"8004C780",
+"OSEnableScheduler",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004C7C0": [
+"8004C7C0",
+"UnsetRun",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004C830": [
+"8004C830",
+"__OSGetEffectivePriority",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004C870": [
+"8004C870",
+"SetEffectivePriority",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004CA20": [
+"8004CA20",
+"__OSPromoteThread",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004CF30": [
+"8004CF30",
+"OSExitThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004D020": [
+"8004D020",
+"OSCancelThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004D200": [
+"8004D200",
+"OSJoinThread",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004D350": [
+"8004D350",
+"OSResumeThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004D5F0": [
+"8004D5F0",
+"OSSuspendThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004D780": [
+"8004D780",
+"OSSleepThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004D870": [
+"8004D870",
+"OSWakeupThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004DAA0": [
+"8004DAA0",
+"OSGetTime",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004DAC0": [
+"8004DAC0",
+"OSGetTick",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004DAD0": [
+"8004DAD0",
+"__OSGetSystemTime",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004DB40": [
+"8004DB40",
+"__OSTimeToSystemTime",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004DED0": [
+"8004DED0",
+"OSUTF8to32",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004DFF0": [
+"8004DFF0",
+"OSUTF16to32",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004E060": [
+"8004E060",
+"OSUTF32toANSI",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E0E0": [
+"8004E0E0",
+"OSUTF32toSJIS",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E120": [
+"8004E120",
+"__OSGetIPCBufferHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004E130": [
+"8004E130",
+"__OSGetIPCBufferLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"8004E140": [
+"8004E140",
+"__OSInitIPCBuffer",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E340": [
+"8004E340",
+"__OSInitSTM",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E460": [
+"8004E460",
+"__OSShutdownToSBY",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E4E0": [
+"8004E4E0",
+"__OSHotReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E560": [
+"8004E560",
+"__OSSetVIForceDimming",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E660": [
+"8004E660",
+"__OSUnRegisterStateEvent",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E710": [
+"8004E710",
+"__OSStateEventHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004E880": [
+"8004E880",
+"PlayRecordCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004ED40": [
+"8004ED40",
+"__OSStartPlayRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004EF90": [
+"8004EF90",
+"__OSWriteStateFlags",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F080": [
+"8004F080",
+"__OSReadStateFlags",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F1B0": [
+"8004F1B0",
+"__OSInitNet",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F270": [
+"8004F270",
+"NWC24iPrepareShutdown",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F330": [
+"8004F330",
+"NWC24iSynchronizeRtcCounter",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004F3D0": [
+"8004F3D0",
+"NWC24SuspendScheduler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F4D0": [
+"8004F4D0",
+"NWC24iRequestShutdown",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F540": [
+"8004F540",
+"NWC24Shutdown_",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F600": [
+"8004F600",
+"NWC24iSetRtcCounter_",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F730": [
+"8004F730",
+"CallbackAsyncIpc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F750": [
+"8004F750",
+"__OSCreateNandbootInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F800": [
+"8004F800",
+"__OSWriteNandbootInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F960": [
+"8004F960",
+"OSPlayTimeIsLimited",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004F980": [
+"8004F980",
+"__OSPlayTimeFadeLastAIDCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004FB40": [
+"8004FB40",
+"__OSWriteExpiredFlag",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004FC60": [
+"8004FC60",
+"__OSWriteExpiredFlagIfSet",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004FC80": [
+"8004FC80",
+"__OSPlayTimeRebootThread",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004FD70": [
+"8004FD70",
+"__OSPlayTimeAlarmExpired",
+"contra-rebirth-recomp",
+"loose"
+],
+"8004FE10": [
+"8004FE10",
+"__OSGetPlayTime",
+"contra-rebirth-recomp",
+"strict"
+],
+"8004FFE0": [
+"8004FFE0",
+"__OSInitPlayTime",
+"contra-rebirth-recomp",
+"loose"
+],
+"80050400": [
+"80050400",
+"__OSCheckCompanyCode",
+"mylifedarklord-recomp",
+"loose"
+],
+"80050520": [
+"80050520",
+"__OSCheckTmdSysVersion",
+"mylifedarklord-recomp",
+"loose"
+],
+"800509F0": [
+"800509F0",
+"__OSLaunchTitle",
+"mylifedarklord-recomp",
+"strict"
+],
+"800510A0": [
+"800510A0",
+"__init_user",
+"contra-rebirth-recomp",
+"strict"
+],
+"800510C0": [
+"800510C0",
+"__init_cpp",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051110": [
+"80051110",
+"exit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051160": [
+"80051160",
+"PSMTXIdentity",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051190": [
+"80051190",
+"PSMTXCopy",
+"contra-rebirth-recomp",
+"strict"
+],
+"800511D0": [
+"800511D0",
+"PSMTXConcat",
+"contra-rebirth-recomp",
+"loose"
+],
+"800514D0": [
+"800514D0",
+"PSMTXTrans",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051510": [
+"80051510",
+"PSMTXTransApply",
+"contra-rebirth-recomp",
+"strict"
+],
+"80051560": [
+"80051560",
+"PSMTXScale",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051590": [
+"80051590",
+"PSMTXMultVec",
+"contra-rebirth-recomp",
+"strict"
+],
+"80051690": [
+"80051690",
+"__DVDFSInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80051F90": [
+"80051F90",
+"DVDInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800520F0": [
+"800520F0",
+"stateReadingFST",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052270": [
+"80052270",
+"cbForStateReadingFST",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052410": [
+"80052410",
+"cbForStateError",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052520": [
+"80052520",
+"cbForStoreErrorCode1",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052540": [
+"80052540",
+"cbForStoreErrorCode2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052580": [
+"80052580",
+"CategorizeError",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052680": [
+"80052680",
+"cbForStoreErrorCode3",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052750": [
+"80052750",
+"cbForStateGettingError",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052C60": [
+"80052C60",
+"cbForUnrecoveredError",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052E40": [
+"80052E40",
+"cbForUnrecoveredErrorRetry",
+"contra-rebirth-recomp",
+"loose"
+],
+"80052F20": [
+"80052F20",
+"cbForStateGoToRetry",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053160": [
+"80053160",
+"stateCheckID",
+"contra-rebirth-recomp",
+"loose"
+],
+"800534A0": [
+"800534A0",
+"cbForStateReadingTOC",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053640": [
+"80053640",
+"cbForStateReadingPartitionInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053AC0": [
+"80053AC0",
+"cbForStateOpenPartition",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053C50": [
+"80053C50",
+"cbForStateOpenPartition2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053DC0": [
+"80053DC0",
+"cbForStateCheckID1",
+"contra-rebirth-recomp",
+"loose"
+],
+"80053F90": [
+"80053F90",
+"cbForStateCheckID2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054200": [
+"80054200",
+"ResetAlarmHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054450": [
+"80054450",
+"cbForStateReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054540": [
+"80054540",
+"stateDownRotation",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054610": [
+"80054610",
+"cbForStateDownRotation",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054850": [
+"80054850",
+"stateCoverClosed_CMD",
+"contra-rebirth-recomp",
+"loose"
+],
+"800549D0": [
+"800549D0",
+"cbForStateCoverClosed",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054AB0": [
+"80054AB0",
+"cbForPrepareCoverRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"80054C70": [
+"80054C70",
+"stateReady",
+"contra-rebirth-recomp",
+"loose"
+],
+"80055540": [
+"80055540",
+"cbForStateBusy",
+"contra-rebirth-recomp",
+"loose"
+],
+"80055F20": [
+"80055F20",
+"DVDReadAbsAsyncPrio",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056010": [
+"80056010",
+"DVDInquiryAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"800560F0": [
+"800560F0",
+"DVDGetCommandBlockStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"800561C0": [
+"800561C0",
+"DVDGetDriveStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056260": [
+"80056260",
+"DVDSetAutoInvalidation",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056270": [
+"80056270",
+"DVDResume",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056630": [
+"80056630",
+"DVDCancel",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056700": [
+"80056700",
+"__BS2DVDLowCallback",
+"mylifedarklord-recomp",
+"prop"
+],
+"80056720": [
+"80056720",
+"__DVDGetCoverStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"800567F0": [
+"800567F0",
+"__DVDResetWithNoSpinup",
+"mylifedarklord-recomp",
+"loose"
+],
+"80056840": [
+"80056840",
+"__DVDPrepareResetAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056970": [
+"80056970",
+"__DVDPrepareReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056AF0": [
+"80056AF0",
+"__DVDClearWaitingQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056B30": [
+"80056B30",
+"__DVDPushWaitingQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056BA0": [
+"80056BA0",
+"__DVDPopWaitingQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056C40": [
+"80056C40",
+"__DVDCheckWaitingQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056CA0": [
+"80056CA0",
+"__DVDGetNextWaitingQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056D10": [
+"80056D10",
+"__DVDDequeueWaitingQueue",
+"contra-rebirth-recomp",
+"strict"
+],
+"80056DA0": [
+"80056DA0",
+"cbForNandWrite",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056E00": [
+"80056E00",
+"cbForNandSeek",
+"contra-rebirth-recomp",
+"loose"
+],
+"80056F00": [
+"80056F00",
+"cbForNandWrite0",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057060": [
+"80057060",
+"cbForNandSeek2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057120": [
+"80057120",
+"cbForNandRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057210": [
+"80057210",
+"cbForNandSeek0",
+"contra-rebirth-recomp",
+"loose"
+],
+"800572B0": [
+"800572B0",
+"cbForNandSeek1",
+"contra-rebirth-recomp",
+"loose"
+],
+"800573B0": [
+"800573B0",
+"cbForNandOpen",
+"contra-rebirth-recomp",
+"loose"
+],
+"800574D0": [
+"800574D0",
+"cbForNandCreate",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057570": [
+"80057570",
+"cbForNandCreateDir",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057610": [
+"80057610",
+"cbForPrepareControlRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800576A0": [
+"800576A0",
+"cbForPrepareStatusRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057720": [
+"80057720",
+"__DVDStoreErrorCode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057790": [
+"80057790",
+"DVDCompareDiskID",
+"contra-rebirth-recomp",
+"strict"
+],
+"80057880": [
+"80057880",
+"__DVDShowFatalMessage",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057950": [
+"80057950",
+"DVDSetAutoFatalMessaging",
+"contra-rebirth-recomp",
+"prop"
+],
+"800579B0": [
+"800579B0",
+"__DVDGetAutoFatalMessaging",
+"contra-rebirth-recomp",
+"prop"
+],
+"800579F0": [
+"800579F0",
+"lowCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057A00": [
+"80057A00",
+"__DVDCheckDevice",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057C80": [
+"80057C80",
+"doTransactionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057D40": [
+"80057D40",
+"doPrepareCoverRegisterCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057E00": [
+"80057E00",
+"DVDLowFinalize",
+"contra-rebirth-recomp",
+"loose"
+],
+"80057E50": [
+"80057E50",
+"DVDLowInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800580C0": [
+"800580C0",
+"DVDLowReadDiskID",
+"contra-rebirth-recomp",
+"loose"
+],
+"80058250": [
+"80058250",
+"DVDLowOpenPartition",
+"contra-rebirth-recomp",
+"loose"
+],
+"80058730": [
+"80058730",
+"DVDLowGetNoDiscBufferSizes",
+"contra-rebirth-recomp",
+"loose"
+],
+"80058D50": [
+"80058D50",
+"DVDLowUnencryptedRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"80058EF0": [
+"80058EF0",
+"DVDLowStopMotor",
+"contra-rebirth-recomp",
+"prop"
+],
+"80059090": [
+"80059090",
+"DVDLowInquiry",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059200": [
+"80059200",
+"DVDLowRequestError",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059370": [
+"80059370",
+"DVDLowSetSpinupFlag",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059380": [
+"80059380",
+"DVDLowReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800596A0": [
+"800596A0",
+"DVDLowReportKey",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059840": [
+"80059840",
+"DVDLowSetMaximumRotation",
+"contra-rebirth-recomp",
+"loose"
+],
+"800599D0": [
+"800599D0",
+"DVDLowRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059B80": [
+"80059B80",
+"DVDLowSeek",
+"contra-rebirth-recomp",
+"loose"
+],
+"80059D00": [
+"80059D00",
+"DVDLowGetCoverRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"80059D10": [
+"80059D10",
+"DVDLowGetStatusRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"80059D20": [
+"80059D20",
+"DVDLowGetControlRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"80059D30": [
+"80059D30",
+"DVDLowPrepareCoverRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"80059EA0": [
+"80059EA0",
+"DVDLowPrepareStatusRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005A010": [
+"8005A010",
+"DVDLowPrepareControlRegister",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005A180": [
+"8005A180",
+"DVDLowGetImmBufferReg",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005A190": [
+"8005A190",
+"DVDLowUnmaskStatusInterrupts",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005A1A0": [
+"8005A1A0",
+"DVDLowMaskCoverInterrupt",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005A1B0": [
+"8005A1B0",
+"DVDLowClearCoverInterrupt",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005AEA0": [
+"8005AEA0",
+"__VIInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005B5F0": [
+"8005B5F0",
+"VIWaitForRetrace",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005B650": [
+"8005B650",
+"setFbbRegs",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005B900": [
+"8005B900",
+"setHorizontalRegs",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005B9E0": [
+"8005B9E0",
+"setVerticalRegs",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C6D0": [
+"8005C6D0",
+"VISetNextFrameBuffer",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C740": [
+"8005C740",
+"VISetBlack",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C7C0": [
+"8005C7C0",
+"VIGetRetraceCount",
+"contra-rebirth-recomp",
+"prop"
+],
+"8005C7D0": [
+"8005C7D0",
+"VIGetNextField",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C870": [
+"8005C870",
+"VIGetCurrentLine",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C900": [
+"8005C900",
+"VIGetTvFormat",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005C960": [
+"8005C960",
+"VIGetScanMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8005C9C0": [
+"8005C9C0",
+"VIGetDTVStatus",
+"contra-rebirth-recomp",
+"strict"
+],
+"8005CA00": [
+"8005CA00",
+"__VIDisplayPositionToXY",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005CE00": [
+"8005CE00",
+"WaitMicroTime",
+"contra-rebirth-recomp",
+"strict"
+],
+"8005D720": [
+"8005D720",
+"__VISetYUVSEL",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005D7C0": [
+"8005D7C0",
+"__VISetFilter4EURGB60",
+"contra-rebirth-recomp",
+"strict"
+],
+"8005D800": [
+"8005D800",
+"__VISetCGMS",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005D860": [
+"8005D860",
+"__VISetWSS",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005D8D0": [
+"8005D8D0",
+"__VISetClosedCaption",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005D940": [
+"8005D940",
+"__VISetMacrovision",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E6C0": [
+"8005E6C0",
+"__VISetGammaImm",
+"contra-rebirth-recomp",
+"strict"
+],
+"8005E820": [
+"8005E820",
+"__VISetGamma1_0",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E830": [
+"8005E830",
+"__VISetGamma",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E850": [
+"8005E850",
+"__VISetTrapFilter",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E8B0": [
+"8005E8B0",
+"__VISetRGBOverDrive",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E940": [
+"8005E940",
+"VISetRGBModeImm",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E950": [
+"8005E950",
+"__VISetRGBModeImm",
+"contra-rebirth-recomp",
+"loose"
+],
+"8005E9A0": [
+"8005E9A0",
+"__VISetRevolutionModeSimple",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060050": [
+"80060050",
+"PADOriginCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060110": [
+"80060110",
+"PADProbeCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800601F0": [
+"800601F0",
+"PADTypeAndStatusCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060510": [
+"80060510",
+"PADReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060620": [
+"80060620",
+"PADRecalibrate",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060730": [
+"80060730",
+"PADInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060890": [
+"80060890",
+"SPEC0_MakeStatus",
+"contra-rebirth-recomp",
+"strict"
+],
+"800609B0": [
+"800609B0",
+"SPEC1_MakeStatus",
+"contra-rebirth-recomp",
+"strict"
+],
+"80060AD0": [
+"80060AD0",
+"SPEC2_MakeStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060EE0": [
+"80060EE0",
+"PAD_OnReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"80060FB0": [
+"80060FB0",
+"PAD_SamplingHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061010": [
+"80061010",
+"__PADDisableRecalibration",
+"contra-rebirth-recomp",
+"strict"
+],
+"80061070": [
+"80061070",
+"AIRegisterDMACallback",
+"contra-rebirth-recomp",
+"prop"
+],
+"800610C0": [
+"800610C0",
+"AIInitDMA",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061140": [
+"80061140",
+"AIStartDMA",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061160": [
+"80061160",
+"AIStopDMA",
+"mylifedarklord-recomp",
+"strict"
+],
+"80061180": [
+"80061180",
+"AIGetDMABytesLeft",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061190": [
+"80061190",
+"AIGetDMAStartAddr",
+"contra-rebirth-recomp",
+"strict"
+],
+"800611B0": [
+"800611B0",
+"AIGetDMALength",
+"contra-rebirth-recomp",
+"strict"
+],
+"80061250": [
+"80061250",
+"AIInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800613D0": [
+"800613D0",
+"__AIDHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061480": [
+"80061480",
+"__AICallbackStackSwitch",
+"contra-rebirth-recomp",
+"loose"
+],
+"800614F0": [
+"800614F0",
+"__AI_SRC_INIT",
+"contra-rebirth-recomp",
+"prop"
+],
+"800616C0": [
+"800616C0",
+"AXInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061820": [
+"80061820",
+"__AXServiceCallbackStack",
+"contra-rebirth-recomp",
+"loose"
+],
+"800618D0": [
+"800618D0",
+"__AXAllocInit",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061A30": [
+"80061A30",
+"__AXPushFreeStack",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061A50": [
+"80061A50",
+"__AXPushCallbackStack",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061A60": [
+"80061A60",
+"__AXRemoveFromStack",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061AF0": [
+"80061AF0",
+"AXFreeVoice",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061D00": [
+"80061D00",
+"__AXAuxInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80061E40": [
+"80061E40",
+"__AXGetAuxAInput",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061E80": [
+"80061E80",
+"__AXGetAuxAOutput",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061EA0": [
+"80061EA0",
+"__AXGetAuxAInputDpl2",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061EC0": [
+"80061EC0",
+"__AXGetAuxAOutputDpl2R",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061EE0": [
+"80061EE0",
+"__AXGetAuxAOutputDpl2Ls",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061F00": [
+"80061F00",
+"__AXGetAuxAOutputDpl2Rs",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061F20": [
+"80061F20",
+"__AXGetAuxBInput",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061F60": [
+"80061F60",
+"__AXGetAuxBOutput",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061F80": [
+"80061F80",
+"__AXGetAuxBInputDpl2",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061FA0": [
+"80061FA0",
+"__AXGetAuxBOutputDpl2R",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061FC0": [
+"80061FC0",
+"__AXGetAuxBOutputDpl2Ls",
+"contra-rebirth-recomp",
+"prop"
+],
+"80061FE0": [
+"80061FE0",
+"__AXGetAuxBOutputDpl2Rs",
+"contra-rebirth-recomp",
+"prop"
+],
+"80062000": [
+"80062000",
+"__AXGetAuxCInput",
+"contra-rebirth-recomp",
+"loose"
+],
+"80062040": [
+"80062040",
+"__AXGetAuxCOutput",
+"contra-rebirth-recomp",
+"loose"
+],
+"80062060": [
+"80062060",
+"__AXProcessAux",
+"contra-rebirth-recomp",
+"loose"
+],
+"800624B0": [
+"800624B0",
+"__AXGetCommandListAddress",
+"contra-rebirth-recomp",
+"loose"
+],
+"800624E0": [
+"800624E0",
+"__AXNextFrame",
+"contra-rebirth-recomp",
+"loose"
+],
+"80062EA0": [
+"80062EA0",
+"__AXClInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80062F60": [
+"80062F60",
+"__AXOutNewFrame",
+"contra-rebirth-recomp",
+"loose"
+],
+"800631C0": [
+"800631C0",
+"__AXOutAiCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063280": [
+"80063280",
+"__AXDSPResumeCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800632E0": [
+"800632E0",
+"__AXDSPDoneCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063300": [
+"80063300",
+"__AXOutInitDSP",
+"contra-rebirth-recomp",
+"prop"
+],
+"800633F0": [
+"800633F0",
+"__AXOutInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063660": [
+"80063660",
+"AXRegisterCallback",
+"contra-rebirth-recomp",
+"prop"
+],
+"800636B0": [
+"800636B0",
+"__AXGetStudio",
+"contra-rebirth-recomp",
+"prop"
+],
+"800636C0": [
+"800636C0",
+"__AXDepopFadeMain",
+"contra-rebirth-recomp",
+"strict"
+],
+"80063730": [
+"80063730",
+"__AXDepopFadeRmt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800637A0": [
+"800637A0",
+"__AXPrintStudio",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063920": [
+"80063920",
+"__AXSPBInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063990": [
+"80063990",
+"__AXDepopVoice",
+"contra-rebirth-recomp",
+"loose"
+],
+"80063AF0": [
+"80063AF0",
+"__AXGetNumVoices",
+"contra-rebirth-recomp",
+"prop"
+],
+"80063B00": [
+"80063B00",
+"__AXServiceVPB",
+"contra-rebirth-recomp",
+"loose"
+],
+"80064360": [
+"80064360",
+"__AXGetPBs",
+"contra-rebirth-recomp",
+"prop"
+],
+"80064370": [
+"80064370",
+"__AXSetPBDefault",
+"contra-rebirth-recomp",
+"strict"
+],
+"800643B0": [
+"800643B0",
+"__AXVPBInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800647A0": [
+"800647A0",
+"AXSetVoiceState",
+"contra-rebirth-recomp",
+"strict"
+],
+"80064B00": [
+"80064B00",
+"AXSetVoiceAddr",
+"contra-rebirth-recomp",
+"strict"
+],
+"80064FC0": [
+"80064FC0",
+"__AXGetCurrentProfile",
+"contra-rebirth-recomp",
+"loose"
+],
+"80065290": [
+"80065290",
+"AXFXReverbHiInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80065340": [
+"80065340",
+"AXFXReverbHiExpInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800654E0": [
+"800654E0",
+"AXFXReverbHiExpShutdown",
+"contra-rebirth-recomp",
+"strict"
+],
+"80066190": [
+"80066190",
+"AXFXSetHooks",
+"mylifedarklord-recomp",
+"loose"
+],
+"80066420": [
+"80066420",
+"DSPCheckMailToDSP",
+"contra-rebirth-recomp",
+"prop"
+],
+"80066430": [
+"80066430",
+"DSPCheckMailFromDSP",
+"contra-rebirth-recomp",
+"prop"
+],
+"80066440": [
+"80066440",
+"DSPReadMailFromDSP",
+"contra-rebirth-recomp",
+"strict"
+],
+"80066460": [
+"80066460",
+"DSPSendMailToDSP",
+"contra-rebirth-recomp",
+"prop"
+],
+"80066480": [
+"80066480",
+"DSPInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066550": [
+"80066550",
+"DSPAddTask",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066600": [
+"80066600",
+"DSPAssertTask",
+"contra-rebirth-recomp",
+"prop"
+],
+"800666C0": [
+"800666C0",
+"__DSP_debug_printf",
+"contra-rebirth-recomp",
+"prop"
+],
+"80066710": [
+"80066710",
+"__DSPHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066B40": [
+"80066B40",
+"__DSP_exec_task",
+"contra-rebirth-recomp",
+"strict"
+],
+"80066CF0": [
+"80066CF0",
+"__DSP_boot_task",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066E80": [
+"80066E80",
+"__DSP_insert_task",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066F20": [
+"80066F20",
+"__DSP_remove_task",
+"contra-rebirth-recomp",
+"loose"
+],
+"80066FB0": [
+"80066FB0",
+"__GXDefaultTexRegionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800670A0": [
+"800670A0",
+"__GXDefaultTlutRegionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800670D0": [
+"800670D0",
+"__GXShutdown",
+"contra-rebirth-recomp",
+"loose"
+],
+"80067240": [
+"80067240",
+"__GXInitRevisionBits",
+"contra-rebirth-recomp",
+"loose"
+],
+"80068140": [
+"80068140",
+"GXCPInterruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"800682A0": [
+"800682A0",
+"GXInitFifoBase",
+"contra-rebirth-recomp",
+"strict"
+],
+"80068330": [
+"80068330",
+"CPGPLinkCheck",
+"contra-rebirth-recomp",
+"loose"
+],
+"80068AB0": [
+"80068AB0",
+"__GXFifoInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80068B30": [
+"80068B30",
+"__GXCleanGPFifo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80068F40": [
+"80068F40",
+"__GXSetVCD",
+"contra-rebirth-recomp",
+"loose"
+],
+"80068FF0": [
+"80068FF0",
+"__GXCalculateVLim",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069120": [
+"80069120",
+"GXClearVtxDesc",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069160": [
+"80069160",
+"GXSetVtxAttrFmt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800694D0": [
+"800694D0",
+"__GXSetVAT",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069550": [
+"80069550",
+"GXSetArray",
+"contra-rebirth-recomp",
+"strict"
+],
+"80069590": [
+"80069590",
+"GXInvalidateVtxCache",
+"contra-rebirth-recomp",
+"strict"
+],
+"800695A0": [
+"800695A0",
+"GXSetTexCoordGen2",
+"contra-rebirth-recomp",
+"loose"
+],
+"800697F0": [
+"800697F0",
+"GXSetNumTexGens",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069820": [
+"80069820",
+"GXSetMisc",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069BD0": [
+"80069BD0",
+"GXDrawDone",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069CA0": [
+"80069CA0",
+"GXPokeAlphaMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069CB0": [
+"80069CB0",
+"GXPokeAlphaRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069CD0": [
+"80069CD0",
+"GXPokeAlphaUpdate",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069CF0": [
+"80069CF0",
+"GXPokeBlendMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069D50": [
+"80069D50",
+"GXPokeColorUpdate",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069D70": [
+"80069D70",
+"GXPokeDstAlpha",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069D90": [
+"80069D90",
+"GXPokeDither",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069DB0": [
+"80069DB0",
+"GXPokeZMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069DD0": [
+"80069DD0",
+"GXSetDrawSyncCallback",
+"contra-rebirth-recomp",
+"prop"
+],
+"80069E20": [
+"80069E20",
+"GXTokenInterruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069EB0": [
+"80069EB0",
+"GXSetDrawDoneCallback",
+"contra-rebirth-recomp",
+"prop"
+],
+"80069F00": [
+"80069F00",
+"GXFinishInterruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069F80": [
+"80069F80",
+"__GXPEInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80069FF0": [
+"80069FF0",
+"__GXSetDirtyState",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A270": [
+"8006A270",
+"GXBegin",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A3C0": [
+"8006A3C0",
+"GXSetLineWidth",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A400": [
+"8006A400",
+"GXSetPointSize",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A440": [
+"8006A440",
+"GXEnableTexOffsets",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A480": [
+"8006A480",
+"GXSetCullMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A6C0": [
+"8006A6C0",
+"GXSetDispCopyDst",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A6F0": [
+"8006A6F0",
+"GXSetDispCopyFrame2Field",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A710": [
+"8006A710",
+"GXSetCopyClamp",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A740": [
+"8006A740",
+"GXGetYScaleFactor",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006A970": [
+"8006A970",
+"GXSetDispCopyYScale",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006AA40": [
+"8006AA40",
+"GXSetCopyClear",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006AAC0": [
+"8006AAC0",
+"GXSetCopyFilter",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006ACB0": [
+"8006ACB0",
+"GXSetDispCopyGamma",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006ACD0": [
+"8006ACD0",
+"GXCopyDisp",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006AE10": [
+"8006AE10",
+"GXClearBoundingBox",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006B010": [
+"8006B010",
+"GXSetNumChans",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006B300": [
+"8006B300",
+"GXInitTexObjCI",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006B350": [
+"8006B350",
+"GXInitTexObjLOD",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006B460": [
+"8006B460",
+"GXInitTexObjWrapMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006B490": [
+"8006B490",
+"GXInitTexObjUserData",
+"contra-rebirth-recomp",
+"prop"
+],
+"8006B4B0": [
+"8006B4B0",
+"GXGetTexObjWidth",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B4D0": [
+"8006B4D0",
+"GXGetTexObjHeight",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B500": [
+"8006B500",
+"GXGetTexObjWrapS",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B510": [
+"8006B510",
+"GXGetTexObjWrapT",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B520": [
+"8006B520",
+"GXGetTexObjMipMap",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B530": [
+"8006B530",
+"GXLoadTexObjPreLoaded",
+"mylifedarklord-recomp",
+"loose"
+],
+"8006B6A0": [
+"8006B6A0",
+"GXLoadTexObj",
+"mylifedarklord-recomp",
+"loose"
+],
+"8006B700": [
+"8006B700",
+"GXInitTlutObj",
+"mylifedarklord-recomp",
+"strict"
+],
+"8006B7D0": [
+"8006B7D0",
+"GXInitTexCacheRegion",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006B880": [
+"8006B880",
+"GXInitTlutRegion",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006B930": [
+"8006B930",
+"__SetSURegs",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006BB30": [
+"8006BB30",
+"__GXSetTmemConfig",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006BE80": [
+"8006BE80",
+"GXSetTevIndirect",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006BEF0": [
+"8006BEF0",
+"GXSetIndTexMtx",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C030": [
+"8006C030",
+"GXSetIndTexCoordScale",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C130": [
+"8006C130",
+"GXSetIndTexOrder",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C200": [
+"8006C200",
+"GXSetNumIndStages",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C220": [
+"8006C220",
+"GXSetTevDirect",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006C270": [
+"8006C270",
+"__GXUpdateBPMask",
+"contra-rebirth-recomp",
+"prop"
+],
+"8006C280": [
+"8006C280",
+"__GXSetIndirectMask",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C2B0": [
+"8006C2B0",
+"__GXFlushTextureState",
+"contra-rebirth-recomp",
+"prop"
+],
+"8006C2E0": [
+"8006C2E0",
+"GXSetTevOp",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C380": [
+"8006C380",
+"GXSetTevColorIn",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C3C0": [
+"8006C3C0",
+"GXSetTevAlphaIn",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C4C0": [
+"8006C4C0",
+"GXSetTevColor",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C520": [
+"8006C520",
+"GXSetTevColorS10",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C590": [
+"8006C590",
+"GXSetTevKColor",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C5F0": [
+"8006C5F0",
+"GXSetTevKColorSel",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C640": [
+"8006C640",
+"GXSetTevKAlphaSel",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C690": [
+"8006C690",
+"GXSetTevSwapMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C6D0": [
+"8006C6D0",
+"GXSetTevSwapModeTable",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C750": [
+"8006C750",
+"GXSetAlphaCompare",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C790": [
+"8006C790",
+"GXSetZTexture",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C820": [
+"8006C820",
+"GXSetTevOrder",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C980": [
+"8006C980",
+"GXSetNumTevStages",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006C9B0": [
+"8006C9B0",
+"GXSetFog",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CD40": [
+"8006CD40",
+"GXSetColorUpdate",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CD70": [
+"8006CD70",
+"GXSetAlphaUpdate",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CDA0": [
+"8006CDA0",
+"GXSetZMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CDE0": [
+"8006CDE0",
+"GXSetZCompLoc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CEC0": [
+"8006CEC0",
+"GXSetDither",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CEF0": [
+"8006CEF0",
+"GXSetDstAlpha",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006CF60": [
+"8006CF60",
+"GXSetFieldMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D090": [
+"8006D090",
+"GXSetProjectionv",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D190": [
+"8006D190",
+"GXSetCurrentMtx",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D1B0": [
+"8006D1B0",
+"GXLoadTexMtxImm",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006D270": [
+"8006D270",
+"__GXSetViewport",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D300": [
+"8006D300",
+"GXSetViewportJitter",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D340": [
+"8006D340",
+"GXSetViewport",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D370": [
+"8006D370",
+"GXSetScissor",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D3E0": [
+"8006D3E0",
+"GXSetScissorBoxOffset",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D420": [
+"8006D420",
+"GXSetClipMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D450": [
+"8006D450",
+"__GXSetMatrixIndex",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006D4E0": [
+"8006D4E0",
+"GXSetGPMetric",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006DD00": [
+"8006DD00",
+"GXClearGPMetric",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006DD10": [
+"8006DD10",
+"strlen",
+"contra-rebirth-recomp",
+"prop"
+],
+"8006DD2C": [
+"8006DD2C",
+"__va_arg",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006DDF4": [
+"8006DDF4",
+"__register_global_object",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006DE0C": [
+"8006DE0C",
+"__destroy_global_chain",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006DF78": [
+"8006DF78",
+"__throw_catch_compare",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E1AC": [
+"8006E1AC",
+"dtor",
+"target-terror-wii-recomp",
+"strict"
+],
+"8006E268": [
+"8006E268",
+"__construct_array",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E360": [
+"8006E360",
+"__destroy_arr",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E3D8": [
+"8006E3D8",
+"__ptmf_scall",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E400": [
+"8006E400",
+"__cvt_fp2unsigned",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006E58C": [
+"8006E58C",
+"__div2u",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E678": [
+"8006E678",
+"__div2i",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E7B0": [
+"8006E7B0",
+"__mod2u",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E894": [
+"8006E894",
+"__mod2i",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006E9A0": [
+"8006E9A0",
+"__shl2i",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006EA74": [
+"8006EA74",
+"__cvt_dbl_ull",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006EB1C": [
+"8006EB1C",
+"__init_cpp_exceptions",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006EB58": [
+"8006EB58",
+"__fini_cpp_exceptions",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006EB8C": [
+"8006EB8C",
+"__register_fragment",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006EBD8": [
+"8006EBD8",
+"__unregister_fragment",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006EC00": [
+"8006EC00",
+"ExPPC_FindExceptionFragment__FPcP12FragmentInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006EC98": [
+"8006EC98",
+"ExPPC_FindExceptionRecord__FPcP15MWExceptionInfo",
+"contra-rebirth-recomp",
+"strict"
+],
+"8006EE48": [
+"8006EE48",
+"ExPPC_NextAction__FP14ActionIterator",
+"contra-rebirth-recomp",
+"loose"
+],
+"8006F54C": [
+"8006F54C",
+"ExPPC_UnwindStack__FP12ThrowContextP15MWExceptionInfoPv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80071248": [
+"80071248",
+"__close_all",
+"contra-rebirth-recomp",
+"loose"
+],
+"800712EC": [
+"800712EC",
+"__flush_all",
+"contra-rebirth-recomp",
+"loose"
+],
+"80071358": [
+"80071358",
+"__ull2dec",
+"contra-rebirth-recomp",
+"strict"
+],
+"80071434": [
+"80071434",
+"__timesdec",
+"contra-rebirth-recomp",
+"strict"
+],
+"800717A8": [
+"800717A8",
+"__two_exp",
+"contra-rebirth-recomp",
+"loose"
+],
+"80071AC4": [
+"80071AC4",
+"__num2dec_internal",
+"castlelvania-rebirth-recomp",
+"loose"
+],
+"80071C28": [
+"80071C28",
+"__num2dec",
+"castlelvania-rebirth-recomp",
+"strict"
+],
+"80071DCC": [
+"80071DCC",
+"__prep_buffer",
+"contra-rebirth-recomp",
+"strict"
+],
+"80071DF4": [
+"80071DF4",
+"__flush_buffer",
+"contra-rebirth-recomp",
+"strict"
+],
+"80071EAC": [
+"80071EAC",
+"__fwrite",
+"contra-rebirth-recomp",
+"strict"
+],
+"800721B4": [
+"800721B4",
+"fclose",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072270": [
+"80072270",
+"fflush",
+"contra-rebirth-recomp",
+"strict"
+],
+"800723A4": [
+"800723A4",
+"_ftell",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007244C": [
+"8007244C",
+"ftell",
+"contra-rebirth-recomp",
+"prop"
+],
+"80072450": [
+"80072450",
+"_fseek",
+"contra-rebirth-recomp",
+"loose"
+],
+"80072614": [
+"80072614",
+"__mbtowc_noconv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072660": [
+"80072660",
+"__wctomb_noconv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007267C": [
+"8007267C",
+"wcstombs",
+"contra-rebirth-recomp",
+"loose"
+],
+"80072734": [
+"80072734",
+"memmove",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072800": [
+"80072800",
+"memchr",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007282C": [
+"8007282C",
+"__memrchr",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072858": [
+"80072858",
+"memcmp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800728A4": [
+"800728A4",
+"__copy_longs_aligned",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072960": [
+"80072960",
+"__copy_longs_rev_aligned",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072A08": [
+"80072A08",
+"__copy_longs_unaligned",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072AC8": [
+"80072AC8",
+"__copy_longs_rev_unaligned",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072B74": [
+"80072B74",
+"__signbitd",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072B8C": [
+"80072B8C",
+"__fpclassifyd",
+"contra-rebirth-recomp",
+"strict"
+],
+"80072C08": [
+"80072C08",
+"__stdio_atexit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80072C18": [
+"80072C18",
+"parse_format",
+"contra-rebirth-recomp",
+"loose"
+],
+"800731D4": [
+"800731D4",
+"long2str",
+"contra-rebirth-recomp",
+"strict"
+],
+"80073414": [
+"80073414",
+"longlong2str",
+"contra-rebirth-recomp",
+"strict"
+],
+"800736C4": [
+"800736C4",
+"double2hex",
+"contra-rebirth-recomp",
+"loose"
+],
+"80073A8C": [
+"80073A8C",
+"round_decimal",
+"contra-rebirth-recomp",
+"strict"
+],
+"80073BB4": [
+"80073BB4",
+"float2str",
+"contra-rebirth-recomp",
+"loose"
+],
+"80074350": [
+"80074350",
+"__pformatter",
+"contra-rebirth-recomp",
+"loose"
+],
+"80074BFC": [
+"80074BFC",
+"__FileWrite",
+"contra-rebirth-recomp",
+"strict"
+],
+"80074C54": [
+"80074C54",
+"__StringWrite",
+"contra-rebirth-recomp",
+"strict"
+],
+"80074CC0": [
+"80074CC0",
+"vprintf",
+"contra-rebirth-recomp",
+"loose"
+],
+"80074D3C": [
+"80074D3C",
+"vsnprintf",
+"contra-rebirth-recomp",
+"loose"
+],
+"80074F3C": [
+"80074F3C",
+"sprintf",
+"contra-rebirth-recomp",
+"loose"
+],
+"80075140": [
+"80075140",
+"strcpy",
+"contra-rebirth-recomp",
+"strict"
+],
+"80075270": [
+"80075270",
+"strcmp",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007538C": [
+"8007538C",
+"strncmp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800753CC": [
+"800753CC",
+"strchr",
+"contra-rebirth-recomp",
+"strict"
+],
+"800753FC": [
+"800753FC",
+"strstr",
+"mylifedarklord-recomp",
+"strict"
+],
+"800759D4": [
+"800759D4",
+"fwide",
+"contra-rebirth-recomp",
+"strict"
+],
+"80075BB0": [
+"80075BB0",
+"__ieee754_log",
+"contra-rebirth-recomp",
+"loose"
+],
+"80075E64": [
+"80075E64",
+"__ieee754_log10",
+"contra-rebirth-recomp",
+"loose"
+],
+"80075F78": [
+"80075F78",
+"__ieee754_pow",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007678C": [
+"8007678C",
+"__ieee754_rem_pio2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80076B10": [
+"80076B10",
+"__kernel_cos",
+"contra-rebirth-recomp",
+"loose"
+],
+"800782D8": [
+"800782D8",
+"__kernel_sin",
+"contra-rebirth-recomp",
+"loose"
+],
+"80078398": [
+"80078398",
+"__kernel_tan",
+"contra-rebirth-recomp",
+"loose"
+],
+"800785E8": [
+"800785E8",
+"atan",
+"contra-rebirth-recomp",
+"loose"
+],
+"80078818": [
+"80078818",
+"copysign",
+"contra-rebirth-recomp",
+"strict"
+],
+"80078844": [
+"80078844",
+"cos",
+"castlelvania-rebirth-recomp",
+"loose"
+],
+"8007890C": [
+"8007890C",
+"floor",
+"castlelvania-rebirth-recomp",
+"loose"
+],
+"80078A5C": [
+"80078A5C",
+"frexp",
+"contra-rebirth-recomp",
+"loose"
+],
+"80078AE4": [
+"80078AE4",
+"ldexp",
+"contra-rebirth-recomp",
+"loose"
+],
+"80078D1C": [
+"80078D1C",
+"tan",
+"contra-rebirth-recomp",
+"loose"
+],
+"80079090": [
+"80079090",
+"SetExiInterruptMask",
+"contra-rebirth-recomp",
+"loose"
+],
+"800795B0": [
+"800795B0",
+"EXISync",
+"contra-rebirth-recomp",
+"loose"
+],
+"800798C0": [
+"800798C0",
+"__EXIProbe",
+"contra-rebirth-recomp",
+"loose"
+],
+"80079B60": [
+"80079B60",
+"EXIDetach",
+"contra-rebirth-recomp",
+"loose"
+],
+"80079D50": [
+"80079D50",
+"EXIDeselect",
+"contra-rebirth-recomp",
+"loose"
+],
+"80079E50": [
+"80079E50",
+"EXIIntrruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007A130": [
+"8007A130",
+"EXTIntrruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007A200": [
+"8007A200",
+"EXIInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007A4D0": [
+"8007A4D0",
+"EXIUnlock",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007A5B0": [
+"8007A5B0",
+"UnlockedHandler",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007A990": [
+"8007A990",
+"ProbeBarnacle",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007AB10": [
+"8007AB10",
+"__OSEnableBarnacle",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007ACD0": [
+"8007ACD0",
+"EXIWriteReg",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007B6E0": [
+"8007B6E0",
+"SIInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007B950": [
+"8007B950",
+"SISetCommand",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007B970": [
+"8007B970",
+"SISetXY",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007B9D0": [
+"8007B9D0",
+"SIEnablePolling",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007BA60": [
+"8007BA60",
+"SIDisablePolling",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007BAD0": [
+"8007BAD0",
+"SIGetResponse",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007BC00": [
+"8007BC00",
+"AlarmHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C280": [
+"8007C280",
+"SIGetTypeAsync",
+"mylifedarklord-recomp",
+"loose"
+],
+"8007C390": [
+"8007C390",
+"SISetSamplingRate",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C478": [
+"8007C478",
+"TRKAccessFile",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007C498": [
+"8007C498",
+"gdev_cc_initialize",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C4DC": [
+"8007C4DC",
+"gdev_cc_open",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C508": [
+"8007C508",
+"gdev_cc_read",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C5BC": [
+"8007C5BC",
+"gdev_cc_write",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C678": [
+"8007C678",
+"gdev_cc_peek",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C710": [
+"8007C710",
+"MWInitializeCriticalSection",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007C714": [
+"8007C714",
+"MWEnterCriticalSection",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007C744": [
+"8007C744",
+"MWExitCriticalSection",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007C74C": [
+"8007C74C",
+"CBGetBytesAvailableForRead",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007C754": [
+"8007C754",
+"CircleBufferInitialize",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007C778": [
+"8007C778",
+"CircleBufferWriteBytes",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007C880": [
+"8007C880",
+"CircleBufferReadBytes",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007C988": [
+"8007C988",
+"TRK_flush_cache",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007C9C0": [
+"8007C9C0",
+"TRK_main",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007C9FC": [
+"8007C9FC",
+"TRKNubMainLoop",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007CAE8": [
+"8007CAE8",
+"TRK_memcpy",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007CC24": [
+"8007CC24",
+"TRK_memset",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007CD4C": [
+"8007CD4C",
+"TRKDispatchMessage",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007CE6C": [
+"8007CE6C",
+"InitMetroTRK",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007CF9C": [
+"8007CF9C",
+"TRKTargetTranslate",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D004": [
+"8007D004",
+"__TRK_copy_vectors",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D138": [
+"8007D138",
+"TRKInitializeTarget",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D180": [
+"8007D180",
+"__TRKreset",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D190": [
+"8007D190",
+"TRKLoadContext",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D218": [
+"8007D218",
+"TRKEXICallBack",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D250": [
+"8007D250",
+"InitMetroTRKCommTable",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D38C": [
+"8007D38C",
+"TRKInitializeIntDrivenUART",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D40C": [
+"8007D40C",
+"TRKPollUART",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D420": [
+"8007D420",
+"TRKReadUARTN",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D45C": [
+"8007D45C",
+"TRK_WriteUARTN",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D498": [
+"8007D498",
+"ReserveEXI2Port",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D4AC": [
+"8007D4AC",
+"UnreserveEXI2Port",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D4C0": [
+"8007D4C0",
+"TRK_board_display",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D4D8": [
+"8007D4D8",
+"InitializeProgramEndTrap",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D52C": [
+"8007D52C",
+"TRKDoNotifyStopped",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D5BC": [
+"8007D5BC",
+"TRKInitializeEventQueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D5E0": [
+"8007D5E0",
+"TRKGetNextEvent",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D66C": [
+"8007D66C",
+"TRKPostEvent",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D738": [
+"8007D738",
+"TRKConstructEvent",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D750": [
+"8007D750",
+"TRKDestructEvent",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D758": [
+"8007D758",
+"TRKInitializeNub",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D804": [
+"8007D804",
+"TRKTerminateNub",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D828": [
+"8007D828",
+"TRKNubWelcome",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D834": [
+"8007D834",
+"TRKInitializeEndian",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007D8A8": [
+"8007D8A8",
+"TRKTestForPacket",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D974": [
+"8007D974",
+"TRKGetInput",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D9A0": [
+"8007D9A0",
+"TRKProcessInput",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007D9E0": [
+"8007D9E0",
+"TRKInitializeSerialHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D9E8": [
+"8007D9E8",
+"TRKTerminateSerialHandler",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007D9F0": [
+"8007D9F0",
+"TRK_strlen",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007DA0C": [
+"8007DA0C",
+"TRK_SuppAccessFile",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007DC00": [
+"8007DC00",
+"TRK_RequestSend",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007DD28": [
+"8007DD28",
+"HandleOpenFileSupportRequest",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007DE40": [
+"8007DE40",
+"HandleCloseFileSupportRequest",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007DF24": [
+"8007DF24",
+"HandlePositionFileSupportRequest",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E030": [
+"8007E030",
+"TRKTargetContinue",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E064": [
+"8007E064",
+"TRKSaveExtended1Block",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E228": [
+"8007E228",
+"TRKRestoreExtended1Block",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E38C": [
+"8007E38C",
+"TRK_MessageSend",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E3F0": [
+"8007E3F0",
+"TRKInitializeMessageBuffers",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E410": [
+"8007E410",
+"TRK_GetFreeBuffer",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E4AC": [
+"8007E4AC",
+"TRKGetBuffer",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E4D0": [
+"8007E4D0",
+"TRK_ReleaseBuffer",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E520": [
+"8007E520",
+"TRK_SetBufferPosition",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E550": [
+"8007E550",
+"TRK_AppendBuffer",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E5F4": [
+"8007E5F4",
+"TRK_ReadBuffer",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E684": [
+"8007E684",
+"TRKAppendBuffer1_ui32",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E754": [
+"8007E754",
+"TRKAppendBuffer1_ui64",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E848": [
+"8007E848",
+"TRKAppendBuffer_ui8",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007E8AC": [
+"8007E8AC",
+"TRKAppendBuffer_ui32",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007E99C": [
+"8007E99C",
+"TRKReadBuffer1_ui64",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007EA7C": [
+"8007EA7C",
+"TRKReadBuffer_ui8",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007EB14": [
+"8007EB14",
+"TRKReadBuffer_ui32",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007EBFC": [
+"8007EBFC",
+"GetTRKConnected",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007EC04": [
+"8007EC04",
+"TRK_DoConnect",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007EC74": [
+"8007EC74",
+"TRKDoDisconnect",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007ECFC": [
+"8007ECFC",
+"TRKDoReset",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007ED68": [
+"8007ED68",
+"TRKDoOverride",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007EDD4": [
+"8007EDD4",
+"TRKDoReadMemory",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F008": [
+"8007F008",
+"TRKDoWriteMemory",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F218": [
+"8007F218",
+"TRKDoReadRegisters",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F414": [
+"8007F414",
+"TRKDoWriteRegisters",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F6B4": [
+"8007F6B4",
+"TRKDoContinue",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F778": [
+"8007F778",
+"TRKDoStep",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007F9FC": [
+"8007F9FC",
+"TRKDoStop",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007FAB4": [
+"8007FAB4",
+"TRKDoSetOption",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007FB80": [
+"8007FB80",
+"__read_console",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007FBE8": [
+"8007FBE8",
+"__TRK_write_console",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007FC50": [
+"8007FC50",
+"__read_file",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007FC58": [
+"8007FC58",
+"__write_file",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007FC60": [
+"8007FC60",
+"__access_file",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007FD0C": [
+"8007FD0C",
+"__TRK_get_MSR",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007FD14": [
+"8007FD14",
+"__TRK_set_MSR",
+"contra-rebirth-recomp",
+"prop"
+],
+"8007FD1C": [
+"8007FD1C",
+"TRKValidMemory32",
+"contra-rebirth-recomp",
+"loose"
+],
+"8007FE14": [
+"8007FE14",
+"TRK_ppc_memcpy",
+"contra-rebirth-recomp",
+"strict"
+],
+"8007FEE0": [
+"8007FEE0",
+"TRKTargetAccessMemory",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080030": [
+"80080030",
+"TRKTargetAccessDefault",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080128": [
+"80080128",
+"TRKTargetAccessFP",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080264": [
+"80080264",
+"TRKTargetAccessExtended1",
+"contra-rebirth-recomp",
+"loose"
+],
+"800803C8": [
+"800803C8",
+"TRKTargetAccessExtended2",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080768": [
+"80080768",
+"TRKPostInterruptEvent",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080938": [
+"80080938",
+"TRKTargetInterrupt",
+"contra-rebirth-recomp",
+"strict"
+],
+"80080994": [
+"80080994",
+"TRKTargetAddStopInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080B94": [
+"80080B94",
+"TRKTargetAddExceptionInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080C30": [
+"80080C30",
+"TRKTargetCheckStep",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080D54": [
+"80080D54",
+"TRKTargetSingleStep",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080DDC": [
+"80080DDC",
+"TRKTargetStepOutOfRange",
+"contra-rebirth-recomp",
+"loose"
+],
+"80080E50": [
+"80080E50",
+"TRKTargetGetPC",
+"contra-rebirth-recomp",
+"prop"
+],
+"80080E60": [
+"80080E60",
+"TRKTargetSupportRequest",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081054": [
+"80081054",
+"TRKTargetStopped",
+"contra-rebirth-recomp",
+"prop"
+],
+"80081064": [
+"80081064",
+"TRKTargetSetStopped",
+"contra-rebirth-recomp",
+"prop"
+],
+"80081074": [
+"80081074",
+"TRKTargetStop",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008108C": [
+"8008108C",
+"TRKPPCAccessSPR",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081168": [
+"80081168",
+"TRKPPCAccessPairedSingleRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081210": [
+"80081210",
+"ReadFPSCR",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081234": [
+"80081234",
+"WriteFPSCR",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081258": [
+"80081258",
+"TRKPPCAccessFPRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081420": [
+"80081420",
+"TRKPPCAccessSpecialReg",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081488": [
+"80081488",
+"TRKTargetSetInputPendingPtr",
+"contra-rebirth-recomp",
+"prop"
+],
+"80081498": [
+"80081498",
+"ConvertAddress",
+"contra-rebirth-recomp",
+"prop"
+],
+"800814A0": [
+"800814A0",
+"GetThreadInfo",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081530": [
+"80081530",
+"SetUseSerialIO",
+"contra-rebirth-recomp",
+"prop"
+],
+"80081538": [
+"80081538",
+"GetUseSerialIO",
+"contra-rebirth-recomp",
+"prop"
+],
+"80081588": [
+"80081588",
+"DBInitComm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800815E4": [
+"800815E4",
+"DBInitInterrupts",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081638": [
+"80081638",
+"DBQueryData",
+"contra-rebirth-recomp",
+"loose"
+],
+"800816DC": [
+"800816DC",
+"DBRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"80081B5C": [
+"80081B5C",
+"__DBEXIInit",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081C18": [
+"80081C18",
+"__DBEXIReadReg",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081D3C": [
+"80081D3C",
+"__DBEXIWriteReg",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081E40": [
+"80081E40",
+"__DBEXIReadRam",
+"contra-rebirth-recomp",
+"strict"
+],
+"80081F20": [
+"80081F20",
+"__DBEXIWriteRam",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082000": [
+"80082000",
+"FindContainHeap_",
+"contra-rebirth-recomp",
+"strict"
+],
+"800826A0": [
+"800826A0",
+"AllocFromHead_",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082780": [
+"80082780",
+"AllocFromTail_",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082850": [
+"80082850",
+"RecycleRegion_",
+"contra-rebirth-recomp",
+"strict"
+],
+"800829C0": [
+"800829C0",
+"MEMCreateExpHeapEx",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082A70": [
+"80082A70",
+"MEMDestroyExpHeap",
+"contra-rebirth-recomp",
+"prop"
+],
+"80082AA0": [
+"80082AA0",
+"MEMAllocFromExpHeapEx",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082B50": [
+"80082B50",
+"MEMFreeToExpHeap",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082C80": [
+"80082C80",
+"List_Init__Q26nw4hbm2utFPQ36nw4hbm2ut4ListUs",
+"contra-rebirth-recomp",
+"strict"
+],
+"80082D10": [
+"80082D10",
+"List_Remove__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80083120": [
+"80083120",
+"ISFS_OpenLib",
+"contra-rebirth-recomp",
+"loose"
+],
+"80083250": [
+"80083250",
+"_isfsFuncCb",
+"contra-rebirth-recomp",
+"loose"
+],
+"80083B20": [
+"80083B20",
+"ISFS_Delete",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084230": [
+"80084230",
+"ISFS_Open",
+"contra-rebirth-recomp",
+"loose"
+],
+"800843C0": [
+"800843C0",
+"ISFS_GetFileStats",
+"contra-rebirth-recomp",
+"loose"
+],
+"800846D0": [
+"800846D0",
+"ISFS_Close",
+"contra-rebirth-recomp",
+"prop"
+],
+"800846E0": [
+"800846E0",
+"ISFS_CloseAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084770": [
+"80084770",
+"ISFS_ShutdownAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084800": [
+"80084800",
+"IPCInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084850": [
+"80084850",
+"IPCReInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800848A0": [
+"800848A0",
+"IPCReadReg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800848B0": [
+"800848B0",
+"IPCWriteReg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800848C0": [
+"800848C0",
+"IPCGetBufferHi",
+"contra-rebirth-recomp",
+"prop"
+],
+"800848D0": [
+"800848D0",
+"IPCGetBufferLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"800848E0": [
+"800848E0",
+"IPCSetBufferLo",
+"contra-rebirth-recomp",
+"prop"
+],
+"800848F0": [
+"800848F0",
+"strnlen",
+"contra-rebirth-recomp",
+"strict"
+],
+"80084920": [
+"80084920",
+"IpcReplyHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084D40": [
+"80084D40",
+"IPCCltInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084E00": [
+"80084E00",
+"IPCCltReInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80084E80": [
+"80084E80",
+"__ios_Ipc2",
+"contra-rebirth-recomp",
+"prop"
+],
+"80085210": [
+"80085210",
+"IOS_Open",
+"contra-rebirth-recomp",
+"loose"
+],
+"80085340": [
+"80085340",
+"IOS_CloseAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"80085400": [
+"80085400",
+"IOS_Close",
+"contra-rebirth-recomp",
+"loose"
+],
+"800855B0": [
+"800855B0",
+"IOS_Read",
+"contra-rebirth-recomp",
+"loose"
+],
+"800857C0": [
+"800857C0",
+"IOS_Write",
+"contra-rebirth-recomp",
+"loose"
+],
+"800859B0": [
+"800859B0",
+"IOS_Seek",
+"contra-rebirth-recomp",
+"loose"
+],
+"80086350": [
+"80086350",
+"iosCreateHeap",
+"contra-rebirth-recomp",
+"loose"
+],
+"80086480": [
+"80086480",
+"__iosAlloc",
+"contra-rebirth-recomp",
+"loose"
+],
+"80086680": [
+"80086680",
+"iosAllocAligned",
+"contra-rebirth-recomp",
+"prop"
+],
+"80086690": [
+"80086690",
+"iosFree",
+"contra-rebirth-recomp",
+"loose"
+],
+"800869F0": [
+"800869F0",
+"IPCiProfAck",
+"contra-rebirth-recomp",
+"loose"
+],
+"80086DD0": [
+"80086DD0",
+"NANDCreate",
+"mylifeking-recomp",
+"strict"
+],
+"80086E50": [
+"80086E50",
+"NANDPrivateCreate",
+"mylifedarklord-recomp",
+"strict"
+],
+"800870A0": [
+"800870A0",
+"NANDPrivateDeleteAsync",
+"mylifedarklord-recomp",
+"loose"
+],
+"80087910": [
+"80087910",
+"nandComposePerm",
+"contra-rebirth-recomp",
+"strict"
+],
+"80087BE0": [
+"80087BE0",
+"NANDGetStatus",
+"mylifedarklord-recomp",
+"prop"
+],
+"80087C50": [
+"80087C50",
+"NANDPrivateGetStatus",
+"contra-rebirth-recomp",
+"strict"
+],
+"80087CC0": [
+"80087CC0",
+"NANDPrivateGetStatusAsync",
+"contra-rebirth-recomp",
+"strict"
+],
+"800881A0": [
+"800881A0",
+"NANDOpen",
+"contra-rebirth-recomp",
+"strict"
+],
+"80088230": [
+"80088230",
+"NANDPrivateOpen",
+"contra-rebirth-recomp",
+"strict"
+],
+"800883C0": [
+"800883C0",
+"nandOpenCallback",
+"contra-rebirth-recomp",
+"strict"
+],
+"80088440": [
+"80088440",
+"NANDClose",
+"contra-rebirth-recomp",
+"strict"
+],
+"800884B0": [
+"800884B0",
+"NANDCloseAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088540": [
+"80088540",
+"nandCloseCallback",
+"contra-rebirth-recomp",
+"strict"
+],
+"800885A0": [
+"800885A0",
+"nandRemoveTailToken",
+"contra-rebirth-recomp",
+"strict"
+],
+"80088760": [
+"80088760",
+"nandGetRelativeName",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088800": [
+"80088800",
+"nandConvertPath",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088960": [
+"80088960",
+"nandIsPrivatePath",
+"contra-rebirth-recomp",
+"loose"
+],
+"800889A0": [
+"800889A0",
+"nandIsUnderPrivatePath",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088A00": [
+"80088A00",
+"nandIsInitialized",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088BF0": [
+"80088BF0",
+"nandGenerateAbsPath",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088EE0": [
+"80088EE0",
+"NANDGetHomeDir",
+"contra-rebirth-recomp",
+"loose"
+],
+"80088F40": [
+"80088F40",
+"nandCallback",
+"contra-rebirth-recomp",
+"strict"
+],
+"80089260": [
+"80089260",
+"NANDPrivateGetTypeAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"800892B0": [
+"800892B0",
+"nandGetTypeCallback",
+"contra-rebirth-recomp",
+"strict"
+],
+"80089340": [
+"80089340",
+"NANDInitBanner",
+"contra-rebirth-recomp",
+"loose"
+],
+"800894E0": [
+"800894E0",
+"nandCalcUsage",
+"mylifedarklord-recomp",
+"strict"
+],
+"800895A0": [
+"800895A0",
+"NANDCheck",
+"mylifeking-recomp",
+"loose"
+],
+"800896B0": [
+"800896B0",
+"reserveFileDescriptor",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A000": [
+"8008A000",
+"SCInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A0A0": [
+"8008A0A0",
+"SCCheckStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A1C0": [
+"8008A1C0",
+"SCReloadConfFileAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A2E0": [
+"8008A2E0",
+"OpenCallbackFromReload",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A3B0": [
+"8008A3B0",
+"ReadCallbackFromReload",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A4A0": [
+"8008A4A0",
+"CloseCallbackFromReload",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A530": [
+"8008A530",
+"FinishFromReload",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008A8C0": [
+"8008A8C0",
+"UnpackItem",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008B070": [
+"8008B070",
+"SCFindU8Item",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008B150": [
+"8008B150",
+"SCFindS8Item",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008B230": [
+"8008B230",
+"SCFindU32Item",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008B310": [
+"8008B310",
+"SCReplaceU8Item",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008B430": [
+"8008B430",
+"SCFlushAsync",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008B650": [
+"8008B650",
+"MyNandCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008B9F0": [
+"8008B9F0",
+"SCGetDisplayOffsetH",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BA70": [
+"8008BA70",
+"SCGetIdleMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BA80": [
+"8008BA80",
+"SCGetLanguage",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BAF0": [
+"8008BAF0",
+"SCGetProgressiveMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BB50": [
+"8008BB50",
+"SCGetScreenSaverMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BBB0": [
+"8008BBB0",
+"SCGetSoundMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BC10": [
+"8008BC10",
+"SCGetCounterBias",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BC60": [
+"8008BC60",
+"SCSetBtDeviceInfoArray",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008BC80": [
+"8008BC80",
+"SCSetBtCmpDevInfoArray",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008BC90": [
+"8008BC90",
+"SCGetBtDpdSensibility",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BD00": [
+"8008BD00",
+"SCGetWpadMotorMode",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BD70": [
+"8008BD70",
+"SCGetWpadSensorBarPosition",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BDD0": [
+"8008BDD0",
+"SCGetWpadSpeakerVolume",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BE40": [
+"8008BE40",
+"__SCF1",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008BFB0": [
+"8008BFB0",
+"SCGetProductArea",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008C040": [
+"8008C040",
+"SCGetProductGameRegion",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008D2D0": [
+"8008D2D0",
+"ARCInitHandle",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008D620": [
+"8008D620",
+"ARCFastOpen",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008D670": [
+"8008D670",
+"ARCConvertPathToEntrynum",
+"contra-rebirth-recomp",
+"loose"
+],
+"8008DAC0": [
+"8008DAC0",
+"ARCGetStartAddrInMem",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008DB00": [
+"8008DB00",
+"ARCChangeDir",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008DB60": [
+"8008DB60",
+"ARCOpenDir",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008DBE0": [
+"8008DBE0",
+"ARCReadDir",
+"contra-rebirth-recomp",
+"strict"
+],
+"8008DCA0": [
+"8008DCA0",
+"ARCCloseDir",
+"contra-rebirth-recomp",
+"prop"
+],
+"8008E120": [
+"8008E120",
+"__wpadCalcRadioQuality",
+"contra-rebirth-recomp",
+"loose"
+],
+"80090220": [
+"80090220",
+"WPADInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80090370": [
+"80090370",
+"__wpadSetupConnectionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80090440": [
+"80090440",
+"__wpadAbortConnectionCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80090E00": [
+"80090E00",
+"__wpadRetrieveChannel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800913E0": [
+"800913E0",
+"WPADGetAccGravityUnit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800918D0": [
+"800918D0",
+"__infoCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80091B50": [
+"80091B50",
+"WPADControlMotor",
+"mylifedarklord-recomp",
+"prop"
+],
+"80092360": [
+"80092360",
+"WPADIsSpeakerEnabled",
+"contra-rebirth-recomp",
+"prop"
+],
+"800923B0": [
+"800923B0",
+"WPADControlSpeaker",
+"contra-rebirth-recomp",
+"prop"
+],
+"80093EB0": [
+"80093EB0",
+"__wpadDpdCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"80096A60": [
+"80096A60",
+"WPADiSendWriteDataCmd",
+"contra-rebirth-recomp",
+"strict"
+],
+"80096C20": [
+"80096C20",
+"WPADiSendWriteData",
+"contra-rebirth-recomp",
+"strict"
+],
+"80096DE0": [
+"80096DE0",
+"WPADiSendReadData",
+"contra-rebirth-recomp",
+"strict"
+],
+"80097020": [
+"80097020",
+"WPADiClearQueue",
+"contra-rebirth-recomp",
+"strict"
+],
+"8009A570": [
+"8009A570",
+"__wpadGetGameInfo",
+"contra-rebirth-recomp",
+"loose"
+],
+"8009B6E0": [
+"8009B6E0",
+"__parse_dpdex_data",
+"contra-rebirth-recomp",
+"loose"
+],
+"8009E6D0": [
+"8009E6D0",
+"WPADiClearMemBlock",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A05D0": [
+"800A05D0",
+"WUDiTerminateDevice",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A0670": [
+"800A0670",
+"__wudDeleteCleanupDatabase",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A1330": [
+"800A1330",
+"__wudNandResultCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A13B0": [
+"800A13B0",
+"__wudNandFlushCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A19A0": [
+"800A19A0",
+"__wudShutdownHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A1F20": [
+"800A1F20",
+"WUDRegisterAllocator",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A2180": [
+"800A2180",
+"WUDGetStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A21C0": [
+"800A21C0",
+"WUDGetBufferStatus",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A2210": [
+"800A2210",
+"WUDSetSniffMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A2420": [
+"800A2420",
+"WUDStartFastSyncSimple",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A2440": [
+"800A2440",
+"WUDCancelSyncDevice",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A24D0": [
+"800A24D0",
+"WUDStopSyncSimple",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A26C0": [
+"800A26C0",
+"WUDSetVisibility",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A3970": [
+"800A3970",
+"WUDIsBusy",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4410": [
+"800A4410",
+"_WUDGetDevAddr",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4530": [
+"800A4530",
+"_WUDGetLinkNumber",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4580": [
+"800A4580",
+"WUDSetDeviceHistory",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4600": [
+"800A4600",
+"WUDIsLatestDevice",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4660": [
+"800A4660",
+"WUDUpdateSCSetting",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A4DC0": [
+"800A4DC0",
+"gki_buffer_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5070": [
+"800A5070",
+"GKI_init_q",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A5090": [
+"800A5090",
+"GKI_getbuf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5230": [
+"800A5230",
+"GKI_getpoolbuf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5320": [
+"800A5320",
+"GKI_freebuf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5490": [
+"800A5490",
+"GKI_get_buf_size",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A54E0": [
+"800A54E0",
+"GKI_send_msg",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A56A0": [
+"800A56A0",
+"GKI_read_mbox",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5750": [
+"800A5750",
+"GKI_enqueue",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A5890": [
+"800A5890",
+"GKI_enqueue_head",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A59D0": [
+"800A59D0",
+"GKI_dequeue",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A5A70": [
+"800A5A70",
+"GKI_remove_from_queue",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A5B50": [
+"800A5B50",
+"GKI_getnext",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A5B70": [
+"800A5B70",
+"GKI_queue_is_empty",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A6040": [
+"800A6040",
+"gki_timers_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6100": [
+"800A6100",
+"GKI_get_tick_count",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6270": [
+"800A6270",
+"GKI_stop_timer",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6300": [
+"800A6300",
+"GKI_init_timer_list",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A6320": [
+"800A6320",
+"GKI_update_timer_list",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A63B0": [
+"800A63B0",
+"GKI_add_to_timer_list",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A64A0": [
+"800A64A0",
+"GKI_remove_from_timer_list",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A65D0": [
+"800A65D0",
+"GKI_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6660": [
+"800A6660",
+"GKI_shutdown",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6710": [
+"800A6710",
+"GKI_run",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A6720": [
+"800A6720",
+"GKI_sched_lock",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A6730": [
+"800A6730",
+"GKI_sched_unlock",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A6740": [
+"800A6740",
+"GKI_delay",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A6750": [
+"800A6750",
+"GKI_send_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6800": [
+"800A6800",
+"GKI_get_taskid",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A6810": [
+"800A6810",
+"GKI_enable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6840": [
+"800A6840",
+"GKI_disable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6890": [
+"800A6890",
+"GKI_exception",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A68A0": [
+"800A68A0",
+"GKI_os_malloc",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A6900": [
+"800A6900",
+"hcisu_h2_receive_msg",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6E50": [
+"800A6E50",
+"hcisu_h2_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6E80": [
+"800A6E80",
+"hcisu_h2_open",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6EF0": [
+"800A6EF0",
+"hcisu_h2_close",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6F60": [
+"800A6F60",
+"hcisu_h2_handle_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A6FA0": [
+"800A6FA0",
+"uusb_CloseDeviceCB",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7040": [
+"800A7040",
+"uusb_ReadIntrDataCB",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A71F0": [
+"800A71F0",
+"uusb_ReadBulkDataCB",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7390": [
+"800A7390",
+"uusb_WriteCtrlDataCB",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7480": [
+"800A7480",
+"uusb_WriteBulkDataCB",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7560": [
+"800A7560",
+"UUSB_Register",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7770": [
+"800A7770",
+"UUSB_Open",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7900": [
+"800A7900",
+"UUSB_Read",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A7B20": [
+"800A7B20",
+"UUSB_Close",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7BD0": [
+"800A7BD0",
+"UUSB_Unregister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7C20": [
+"800A7C20",
+"bte_hcisu_send",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7C40": [
+"800A7C40",
+"bte_hcisu_task",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7CE0": [
+"800A7CE0",
+"bta_ci_hci_msg_handler",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A7CF0": [
+"800A7CF0",
+"BTE_InitStack",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A7D20": [
+"800A7D20",
+"LogMsg",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7EC0": [
+"800A7EC0",
+"BTUInterruptHandler",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7EE0": [
+"800A7EE0",
+"BTA_Init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A7FC0": [
+"800A7FC0",
+"BTA_CleanUp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8030": [
+"800A8030",
+"btu_task_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A83F0": [
+"800A83F0",
+"btu_start_timer",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8460": [
+"800A8460",
+"btu_stop_timer",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8474": [
+"800A8474",
+"bdcpy",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A84A8": [
+"800A84A8",
+"bdcmp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8548": [
+"800A8548",
+"bta_sys_rm_register",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8558": [
+"800A8558",
+"bta_sys_compress_register",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8568": [
+"800A8568",
+"bta_sys_pm_register",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8578": [
+"800A8578",
+"bta_sys_conn_open",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A863C": [
+"800A863C",
+"bta_sys_conn_close",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A879C": [
+"800A879C",
+"bta_sys_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8800": [
+"800A8800",
+"bta_sys_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A890C": [
+"800A890C",
+"bta_sys_register",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8920": [
+"800A8920",
+"bta_sys_sendmsg",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A893C": [
+"800A893C",
+"bta_sys_start_timer",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A895C": [
+"800A895C",
+"bta_sys_stop_timer",
+"contra-rebirth-recomp",
+"prop"
+],
+"800A8970": [
+"800A8970",
+"bta_sys_disable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A89E0": [
+"800A89E0",
+"ptim_init",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8A2C": [
+"800A8A2C",
+"ptim_timer_update",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8AE0": [
+"800A8AE0",
+"ptim_start_timer",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8B80": [
+"800A8B80",
+"ptim_stop_timer",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8BC0": [
+"800A8BC0",
+"utl_freebuf",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8C04": [
+"800A8C04",
+"bta_dm_enable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8D14": [
+"800A8D14",
+"bta_dm_disable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8DC4": [
+"800A8DC4",
+"bta_dm_disable_timer_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A8E88": [
+"800A8E88",
+"bta_dm_set_visibility",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8ED0": [
+"800A8ED0",
+"bta_dm_bond",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8F40": [
+"800A8F40",
+"bta_dm_pin_reply",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A8FDC": [
+"800A8FDC",
+"bta_dm_auth_reply",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A90B0": [
+"800A90B0",
+"bta_dm_search_start",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9110": [
+"800A9110",
+"bta_dm_search_cancel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9194": [
+"800A9194",
+"bta_dm_discover",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9638": [
+"800A9638",
+"bta_dm_disc_rmt_name",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A969C": [
+"800A969C",
+"bta_dm_sdp_result",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A991C": [
+"800A991C",
+"bta_dm_disc_result",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A996C": [
+"800A996C",
+"bta_dm_search_result",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A99F4": [
+"800A99F4",
+"bta_dm_search_timer_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9B9C": [
+"800A9B9C",
+"bta_dm_search_cancel_transac_cmpl",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9DB0": [
+"800A9DB0",
+"bta_dm_discover_next_device",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9E90": [
+"800A9E90",
+"bta_dm_sdp_callback",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A9ED8": [
+"800A9ED8",
+"bta_dm_inq_results_cb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9F68": [
+"800A9F68",
+"bta_dm_inq_cmpl_cb",
+"contra-rebirth-recomp",
+"strict"
+],
+"800A9FB4": [
+"800A9FB4",
+"bta_dm_service_search_remname_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800A9FF4": [
+"800A9FF4",
+"bta_dm_remname_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA080": [
+"800AA080",
+"bta_dm_disc_remname_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA10C": [
+"800AA10C",
+"bta_dm_authorize_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA1D4": [
+"800AA1D4",
+"bta_dm_pinname_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA294": [
+"800AA294",
+"bta_dm_pin_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA3CC": [
+"800AA3CC",
+"bta_dm_new_link_key_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA468": [
+"800AA468",
+"bta_dm_authentication_complete_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA514": [
+"800AA514",
+"bta_dm_signal_strength",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA550": [
+"800AA550",
+"bta_dm_signal_strength_timer_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AA644": [
+"800AA644",
+"bta_dm_acl_change_cback",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AA6B4": [
+"800AA6B4",
+"bta_dm_acl_change",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AAB0C": [
+"800AAB0C",
+"bta_dm_compress_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AAE4C": [
+"800AAE4C",
+"bta_dm_keep_acl",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AAED0": [
+"800AAED0",
+"bta_dm_immediate_disable",
+"contra-rebirth-recomp",
+"prop"
+],
+"800AAEF0": [
+"800AAEF0",
+"bta_dm_send_hci_reset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AAF40": [
+"800AAF40",
+"BTA_EnableBluetooth",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AAFC8": [
+"800AAFC8",
+"BTA_DisableBluetooth",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB000": [
+"800AB000",
+"BTA_DmIsDeviceUp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB038": [
+"800AB038",
+"BTA_DmSetDeviceName",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB09C": [
+"800AB09C",
+"BTA_DmSetVisibility",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB0F4": [
+"800AB0F4",
+"BTA_DmSearch",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB178": [
+"800AB178",
+"BTA_DmSearchCancel",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB32C": [
+"800AB32C",
+"BTA_DmRemoveDevice",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB374": [
+"800AB374",
+"BTA_DmSendHciReset",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AB3AC": [
+"800AB3AC",
+"bta_dm_sm_execute",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AB444": [
+"800AB444",
+"bta_dm_search_sm_execute",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AB50C": [
+"800AB50C",
+"bta_dm_init_pm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AB574": [
+"800AB574",
+"bta_dm_disable_pm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ABD04": [
+"800ABD04",
+"bta_dm_pm_timer_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ABF1C": [
+"800ABF1C",
+"bta_dm_pm_timer",
+"contra-rebirth-recomp",
+"strict"
+],
+"800ABF28": [
+"800ABF28",
+"bta_hh_api_enable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC09C": [
+"800AC09C",
+"bta_hh_api_disable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC1A0": [
+"800AC1A0",
+"bta_hh_disc_cmpl",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC244": [
+"800AC244",
+"bta_hh_sdp_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC378": [
+"800AC378",
+"bta_hh_start_sdp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC50C": [
+"800AC50C",
+"bta_hh_sdp_cmpl",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC674": [
+"800AC674",
+"bta_hh_api_disc_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC6DC": [
+"800AC6DC",
+"bta_hh_open_cmpl_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC804": [
+"800AC804",
+"bta_hh_open_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AC8BC": [
+"800AC8BC",
+"bta_hh_data_act",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AC914": [
+"800AC914",
+"bta_hh_handsk_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ACB7C": [
+"800ACB7C",
+"bta_hh_ctrl_dat_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ACD74": [
+"800ACD74",
+"bta_hh_close_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ACF74": [
+"800ACF74",
+"bta_hh_get_dscp_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ACF90": [
+"800ACF90",
+"bta_hh_maint_dev_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AD210": [
+"800AD210",
+"bta_hh_write_dev_act",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AD3D8": [
+"800AD3D8",
+"bta_hh_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AD670": [
+"800AD670",
+"BTA_HhEnable",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AD6F8": [
+"800AD6F8",
+"BTA_HhDisable",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AD730": [
+"800AD730",
+"BTA_HhClose",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AD794": [
+"800AD794",
+"BTA_HhOpen",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AD848": [
+"800AD848",
+"BTA_HhSendData",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AD980": [
+"800AD980",
+"BTA_HhRemoveDev",
+"contra-rebirth-recomp",
+"strict"
+],
+"800AD9EC": [
+"800AD9EC",
+"BTA_HhGetAclQueueInfo",
+"contra-rebirth-recomp",
+"strict"
+],
+"800ADD94": [
+"800ADD94",
+"bta_hh_hdl_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800ADEE0": [
+"800ADEE0",
+"bta_hh_evt_code",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE0D0": [
+"800AE0D0",
+"bta_hh_clean_up_kdev",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE20C": [
+"800AE20C",
+"bta_hh_tod_spt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE260": [
+"800AE260",
+"bta_hh_trace_dev_db",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE340": [
+"800AE340",
+"btm_acl_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE35C": [
+"800AE35C",
+"btm_handle_to_acl_index",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE6F4": [
+"800AE6F4",
+"btm_acl_removed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AE7B8": [
+"800AE7B8",
+"btm_acl_device_down",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AEA38": [
+"800AEA38",
+"btm_acl_encrypt_change",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AEBA8": [
+"800AEBA8",
+"BTM_SetLinkPolicy",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AED98": [
+"800AED98",
+"BTM_SetDefaultLinkPolicy",
+"contra-rebirth-recomp",
+"prop"
+],
+"800AEDA8": [
+"800AEDA8",
+"btm_read_link_policy_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AEEAC": [
+"800AEEAC",
+"btm_read_remote_version_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AEF38": [
+"800AEF38",
+"btm_read_remote_features_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF164": [
+"800AF164",
+"BTM_SetDefaultLinkSuperTout",
+"contra-rebirth-recomp",
+"prop"
+],
+"800AF174": [
+"800AF174",
+"BTM_IsAclConnectionUp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF24C": [
+"800AF24C",
+"BTM_GetNumAclLinks",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF2A8": [
+"800AF2A8",
+"btm_get_acl_disc_reason_code",
+"contra-rebirth-recomp",
+"prop"
+],
+"800AF2B8": [
+"800AF2B8",
+"BTM_GetHCIConnHandle",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF354": [
+"800AF354",
+"btm_process_clk_off_comp_evt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF5E4": [
+"800AF5E4",
+"btm_acl_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF7E0": [
+"800AF7E0",
+"BTM_AclRegisterForChanges",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AF8FC": [
+"800AF8FC",
+"BTM_ReadRSSI",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AFA38": [
+"800AFA38",
+"BTM_ReadLinkQuality",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AFB74": [
+"800AFB74",
+"btm_read_rssi_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AFC90": [
+"800AFC90",
+"btm_read_link_quality_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800AFDA8": [
+"800AFDA8",
+"btm_remove_acl",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B020C": [
+"800B020C",
+"BTM_SecDeleteDevice",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B02B8": [
+"800B02B8",
+"BTM_SecReadDevName",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0358": [
+"800B0358",
+"btm_sec_alloc_dev",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0478": [
+"800B0478",
+"btm_find_dev_by_handle",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0530": [
+"800B0530",
+"btm_find_dev",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B05B8": [
+"800B05B8",
+"btm_find_oldest_dev",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0750": [
+"800B0750",
+"btm_dev_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B07F0": [
+"800B07F0",
+"btm_db_reset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B08A0": [
+"800B08A0",
+"BTM_DeviceReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B093C": [
+"800B093C",
+"BTM_SendHciReset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B09E4": [
+"800B09E4",
+"BTM_IsDeviceUp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0A00": [
+"800B0A00",
+"BTM_SetAfhChannels",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0AF0": [
+"800B0AF0",
+"btm_dev_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0D88": [
+"800B0D88",
+"btm_reset_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B0F4C": [
+"800B0F4C",
+"btm_read_hci_buf_size_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1014": [
+"800B1014",
+"btm_read_local_version_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B15CC": [
+"800B15CC",
+"BTM_SetLocalDeviceName",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1684": [
+"800B1684",
+"btm_read_local_name_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1710": [
+"800B1710",
+"BTM_ReadLocalDeviceAddr",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1750": [
+"800B1750",
+"btm_read_local_addr_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1798": [
+"800B1798",
+"BTM_ReadLocalVersion",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B17E4": [
+"800B17E4",
+"BTM_SetDeviceClass",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1874": [
+"800B1874",
+"BTM_ReadLocalFeatures",
+"contra-rebirth-recomp",
+"prop"
+],
+"800B1884": [
+"800B1884",
+"BTM_RegisterForDeviceStatusNotif",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1998": [
+"800B1998",
+"btm_vsc_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1A04": [
+"800B1A04",
+"BTM_RegisterForVSEvents",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1A3C": [
+"800B1A3C",
+"btm_vendor_specific_evt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1AD4": [
+"800B1AD4",
+"BTM_WritePageTimeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1B74": [
+"800B1B74",
+"BTM_ReadStoredLinkKey",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1C4C": [
+"800B1C4C",
+"BTM_WriteStoredLinkKey",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1D1C": [
+"800B1D1C",
+"BTM_DeleteStoredLinkKey",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1DEC": [
+"800B1DEC",
+"btm_read_stored_link_key_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1E68": [
+"800B1E68",
+"btm_write_stored_link_key_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1EC4": [
+"800B1EC4",
+"btm_delete_stored_link_key_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B1F2C": [
+"800B1F2C",
+"btm_return_link_keys_evt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B20D8": [
+"800B20D8",
+"btm_discovery_db_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2150": [
+"800B2150",
+"btm_discovery_db_reset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B25F0": [
+"800B25F0",
+"BTM_SetInquiryMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2810": [
+"800B2810",
+"BTM_IsInquiryActive",
+"contra-rebirth-recomp",
+"prop"
+],
+"800B2820": [
+"800B2820",
+"BTM_CancelInquiry",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2928": [
+"800B2928",
+"BTM_StartInquiry",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2BC4": [
+"800B2BC4",
+"BTM_CancelRemoteDeviceName",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2C3C": [
+"800B2C3C",
+"BTM_InqDbRead",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2CFC": [
+"800B2CFC",
+"BTM_InqDbFirst",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B2DB4": [
+"800B2DB4",
+"BTM_InqDbNext",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B3158": [
+"800B3158",
+"btm_inq_db_init",
+"contra-rebirth-recomp",
+"prop"
+],
+"800B3238": [
+"800B3238",
+"btm_inq_db_new",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B3420": [
+"800B3420",
+"btm_event_filter_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B38B8": [
+"800B38B8",
+"btm_process_inq_complete",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B3C64": [
+"800B3C64",
+"btm_inq_rmt_name_failed",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B3CA4": [
+"800B3CA4",
+"btm_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B3D00": [
+"800B3D00",
+"BTM_PmRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B3F8C": [
+"800B3F8C",
+"BTM_ReadPowerMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B40BC": [
+"800B40BC",
+"btm_pm_sm_alloc",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B410C": [
+"800B410C",
+"btm_pm_compare_modes",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B4488": [
+"800B4488",
+"btm_pm_snd_md_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B46BC": [
+"800B46BC",
+"btm_pm_proc_cmd_status",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B4994": [
+"800B4994",
+"btm_sco_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B50C0": [
+"800B50C0",
+"BTM_RemoveSco",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5178": [
+"800B5178",
+"btm_remove_sco_links",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B51FC": [
+"800B51FC",
+"btm_sco_removed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5310": [
+"800B5310",
+"btm_sco_acl_removed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5674": [
+"800B5674",
+"btm_is_sco_active",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B56E4": [
+"800B56E4",
+"btm_num_sco_links_active",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5744": [
+"800B5744",
+"btm_is_sco_active_by_bdaddr",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B57CC": [
+"800B57CC",
+"BTM_SecRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5844": [
+"800B5844",
+"BTM_SecAddRmtNameNotifyCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5894": [
+"800B5894",
+"BTM_SecDeleteRmtNameNotifyCallback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B58E8": [
+"800B58E8",
+"BTM_SetPinType",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B5C84": [
+"800B5C84",
+"BTM_DeviceAuthorized",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B692C": [
+"800B692C",
+"btm_sec_conn_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B6A58": [
+"800B6A58",
+"btm_sec_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B6A74": [
+"800B6A74",
+"btm_sec_dev_reset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B6AB4": [
+"800B6AB4",
+"btm_sec_abort_access_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B7194": [
+"800B7194",
+"btm_sec_mkey_comp_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B7290": [
+"800B7290",
+"btm_sec_encrypt_change",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B73CC": [
+"800B73CC",
+"btm_sec_is_bonding",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B788C": [
+"800B788C",
+"btm_sec_disconnect",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B7948": [
+"800B7948",
+"btm_sec_disconnected",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B7C30": [
+"800B7C30",
+"btm_sec_link_key_request",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B7D60": [
+"800B7D60",
+"btm_sec_pin_code_request_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B8130": [
+"800B8130",
+"btm_sec_update_clock_offset",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B8180": [
+"800B8180",
+"btm_sec_execute_procedure",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B8560": [
+"800B8560",
+"btm_sec_start_authorization",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B867C": [
+"800B867C",
+"btm_sec_collision_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B875C": [
+"800B875C",
+"btm_read_trusted_mask",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B8790": [
+"800B8790",
+"btu_hcif_process_event",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B8D48": [
+"800B8D48",
+"btu_hcif_send_cmd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B8ED4": [
+"800B8ED4",
+"btu_hcif_connection_comp_evt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B8FB0": [
+"800B8FB0",
+"btu_hcif_connection_request_evt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B903C": [
+"800B903C",
+"btu_hcif_qos_setup_comp_evt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B913C": [
+"800B913C",
+"btu_hcif_esco_connection_comp_evt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B9374": [
+"800B9374",
+"btu_hcif_command_complete_evt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B948C": [
+"800B948C",
+"btu_hcif_hdl_command_status",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B97B4": [
+"800B97B4",
+"btu_hcif_cmd_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B990C": [
+"800B990C",
+"btu_hcif_link_key_notification_evt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B99EC": [
+"800B99EC",
+"btu_init_core",
+"contra-rebirth-recomp",
+"prop"
+],
+"800B9A18": [
+"800B9A18",
+"BTE_Init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B9A64": [
+"800B9A64",
+"WBT_ExtCreateRecord",
+"contra-rebirth-recomp",
+"strict"
+],
+"800B9B44": [
+"800B9B44",
+"GAP_Init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B9BA4": [
+"800B9BA4",
+"gap_conn_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B9DA0": [
+"800B9DA0",
+"gap_connect_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800B9F7C": [
+"800B9F7C",
+"gap_config_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA0B8": [
+"800BA0B8",
+"gap_config_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA2A4": [
+"800BA2A4",
+"gap_disconnect_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA49C": [
+"800BA49C",
+"gap_data_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA5AC": [
+"800BA5AC",
+"gap_congestion_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA6E0": [
+"800BA6E0",
+"btm_cback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BA8B8": [
+"800BA8B8",
+"gap_btm_cback0",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BA8C4": [
+"800BA8C4",
+"gap_btm_cback1",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BA8D0": [
+"800BA8D0",
+"gap_find_addr_name_cb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BACFC": [
+"800BACFC",
+"btsnd_hcic_inquiry",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BADA4": [
+"800BADA4",
+"btsnd_hcic_inq_cancel",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BAFA4": [
+"800BAFA4",
+"btsnd_hcic_disconnect",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB02C": [
+"800BB02C",
+"btsnd_hcic_add_SCO_conn",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB0B8": [
+"800BB0B8",
+"btsnd_hcic_accept_conn",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB118": [
+"800BB118",
+"btsnd_hcic_reject_conn",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB314": [
+"800BB314",
+"btsnd_hcic_link_key_neg_reply",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB3B4": [
+"800BB3B4",
+"btsnd_hcic_pin_code_req_reply",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB598": [
+"800BB598",
+"btsnd_hcic_pin_code_neg_reply",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB638": [
+"800BB638",
+"btsnd_hcic_change_conn_type",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB6C8": [
+"800BB6C8",
+"btsnd_hcic_auth_request",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB744": [
+"800BB744",
+"btsnd_hcic_set_conn_encrypt",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB7D0": [
+"800BB7D0",
+"btsnd_hcic_rmt_name_req",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB8A8": [
+"800BB8A8",
+"btsnd_hcic_rmt_name_req_cancel",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB948": [
+"800BB948",
+"btsnd_hcic_rmt_features_req",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BB9C4": [
+"800BB9C4",
+"btsnd_hcic_rmt_ver_req",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBA40": [
+"800BBA40",
+"btsnd_hcic_read_rmt_clk_offset",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBCA0": [
+"800BBCA0",
+"btsnd_hcic_reject_esco_conn",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBD00": [
+"800BBD00",
+"btsnd_hcic_hold_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBE80": [
+"800BBE80",
+"btsnd_hcic_exit_sniff_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBF04": [
+"800BBF04",
+"btsnd_hcic_park_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BBFB8": [
+"800BBFB8",
+"btsnd_hcic_exit_park_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC03C": [
+"800BC03C",
+"btsnd_hcic_switch_role",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC0EC": [
+"800BC0EC",
+"btsnd_hcic_write_policy_set",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC180": [
+"800BC180",
+"btsnd_hcic_reset",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC1DC": [
+"800BC1DC",
+"btsnd_hcic_set_event_filter",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC398": [
+"800BC398",
+"btsnd_hcic_write_pin_type",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC40C": [
+"800BC40C",
+"btsnd_hcic_read_stored_key",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC62C": [
+"800BC62C",
+"btsnd_hcic_delete_stored_key",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC6DC": [
+"800BC6DC",
+"btsnd_hcic_change_name",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC81C": [
+"800BC81C",
+"btsnd_hcic_write_page_tout",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC854": [
+"800BC854",
+"btsnd_hcic_write_scan_enable",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC884": [
+"800BC884",
+"btsnd_hcic_write_pagescan_cfg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC8C8": [
+"800BC8C8",
+"btsnd_hcic_write_inqscan_cfg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC90C": [
+"800BC90C",
+"btsnd_hcic_write_auth_enable",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC980": [
+"800BC980",
+"btsnd_hcic_write_encr_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BC9F4": [
+"800BC9F4",
+"btsnd_hcic_write_dev_class",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCA38": [
+"800BCA38",
+"btsnd_hcic_write_auto_flush_tout",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCA7C": [
+"800BCA7C",
+"btsnd_hcic_set_host_buf_size",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCB38": [
+"800BCB38",
+"btsnd_hcic_write_link_super_tout",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCBCC": [
+"800BCBCC",
+"btsnd_hcic_write_cur_iac_lap",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCC3C": [
+"800BCC3C",
+"btsnd_hcic_read_local_ver",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCC9C": [
+"800BCC9C",
+"btsnd_hcic_read_local_features",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCCF8": [
+"800BCCF8",
+"btsnd_hcic_read_buffer_size",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCD20": [
+"800BCD20",
+"btsnd_hcic_read_bd_addr",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCD80": [
+"800BCD80",
+"btsnd_hcic_get_link_quality",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCDFC": [
+"800BCDFC",
+"btsnd_hcic_read_rssi",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BCE74": [
+"800BCE74",
+"btsnd_hcic_set_afh_channels",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD294": [
+"800BD294",
+"btsnd_hcic_write_inqscan_type",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BD2C4": [
+"800BD2C4",
+"btsnd_hcic_write_inquiry_mode",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BD2F4": [
+"800BD2F4",
+"btsnd_hcic_write_pagescan_type",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BD324": [
+"800BD324",
+"btsnd_hcic_vendor_spec_cmd",
+"contra-rebirth-recomp",
+"strict"
+],
+"800BD418": [
+"800BD418",
+"HID_DevInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD480": [
+"800BD480",
+"hidd_conn_initiate",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD540": [
+"800BD540",
+"hidd_proc_repage_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD608": [
+"800BD608",
+"hidd_pm_set_now",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD7E0": [
+"800BD7E0",
+"hidd_pm_proc_mode_change",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD938": [
+"800BD938",
+"hidd_pm_inact_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BD984": [
+"800BD984",
+"HID_HostGetSDPRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BDA4C": [
+"800BDA4C",
+"hidh_search_callback",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BDE9C": [
+"800BDE9C",
+"HID_HostInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BDEE0": [
+"800BDEE0",
+"HID_HostRegister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BE4DC": [
+"800BE4DC",
+"HID_HostSetSecurityLevel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BE704": [
+"800BE704",
+"hidh_conn_reg",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BE85C": [
+"800BE85C",
+"hidh_conn_disconnect",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BE900": [
+"800BE900",
+"hidh_sec_check_complete_term",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BEC88": [
+"800BEC88",
+"hidh_proc_repage_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BEFE8": [
+"800BEFE8",
+"hidh_l2cif_connect_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BF330": [
+"800BF330",
+"hidh_l2cif_config_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BFBA8": [
+"800BFBA8",
+"hidh_l2cif_disconnect_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BFDF0": [
+"800BFDF0",
+"hidh_l2cif_cong_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800BFFE8": [
+"800BFFE8",
+"hidh_l2cif_data_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C061C": [
+"800C061C",
+"hidh_conn_initiate",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C0718": [
+"800C0718",
+"hidh_conn_dereg",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C0744": [
+"800C0744",
+"L2CA_Register",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C08E0": [
+"800C08E0",
+"L2CA_Deregister",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C0970": [
+"800C0970",
+"L2CA_ConnectReq",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C0D34": [
+"800C0D34",
+"L2CA_ConfigReq",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C0DEC": [
+"800C0DEC",
+"L2CA_ConfigRsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C0EBC": [
+"800C0EBC",
+"L2CA_DisconnectReq",
+"contra-rebirth-recomp",
+"prop"
+],
+"800C0F60": [
+"800C0F60",
+"L2CA_DisconnectRsp",
+"contra-rebirth-recomp",
+"prop"
+],
+"800C1004": [
+"800C1004",
+"L2CA_DataWrite",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C1128": [
+"800C1128",
+"L2CA_SetIdleTimeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C11F0": [
+"800C11F0",
+"L2CA_SetIdleTimeoutByBdAddr",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C12F0": [
+"800C12F0",
+"L2CA_SetTraceLevel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C130C": [
+"800C130C",
+"L2CA_RegisterCompression",
+"contra-rebirth-recomp",
+"prop"
+],
+"800C1760": [
+"800C1760",
+"l2c_csm_term_w4_sec_comp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C27EC": [
+"800C27EC",
+"l2c_link_hci_conn_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C2940": [
+"800C2940",
+"l2c_link_hci_conn_comp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C2B78": [
+"800C2B78",
+"l2c_link_sec_comp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C2C2C": [
+"800C2C2C",
+"l2c_link_hci_disc_comp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C2CE8": [
+"800C2CE8",
+"l2c_link_hci_qos_violation",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C2D58": [
+"800C2D58",
+"l2c_link_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C2ECC": [
+"800C2ECC",
+"l2c_link_send_to_lower",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C351C": [
+"800C351C",
+"l2c_link_processs_num_bufs",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C3700": [
+"800C3700",
+"l2cap_link_chk_pkt_end",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C376C": [
+"800C376C",
+"l2c_link_role_changed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C37EC": [
+"800C37EC",
+"l2c_link_role_change_failed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C3858": [
+"800C3858",
+"l2c_link_segments_xmitted",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C3934": [
+"800C3934",
+"l2c_pin_code_request",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C3978": [
+"800C3978",
+"l2c_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C3DBC": [
+"800C3DBC",
+"process_l2cap_cmd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C49A8": [
+"800C49A8",
+"l2cu_allocate_lcb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C4A7C": [
+"800C4A7C",
+"l2cu_release_lcb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C4B7C": [
+"800C4B7C",
+"l2cu_find_lcb_by_bd_addr",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C4C04": [
+"800C4C04",
+"l2cu_find_lcb_by_handle",
+"contra-rebirth-recomp",
+"prop"
+],
+"800C4C94": [
+"800C4C94",
+"l2cu_get_conn_role",
+"contra-rebirth-recomp",
+"prop"
+],
+"800C4CA4": [
+"800C4CA4",
+"l2cu_build_header",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C4E64": [
+"800C4E64",
+"l2cu_send_peer_connect_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C4F28": [
+"800C4F28",
+"l2cu_send_peer_connect_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5000": [
+"800C5000",
+"l2cu_reject_connection",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C50C0": [
+"800C50C0",
+"l2cu_send_peer_config_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C53B8": [
+"800C53B8",
+"l2cu_send_peer_config_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5864": [
+"800C5864",
+"l2cu_send_peer_disc_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5938": [
+"800C5938",
+"l2cu_send_peer_disc_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C59F8": [
+"800C59F8",
+"l2cu_send_peer_echo_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5B68": [
+"800C5B68",
+"l2cu_send_peer_echo_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5D04": [
+"800C5D04",
+"l2cu_send_peer_info_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5DA8": [
+"800C5DA8",
+"l2cu_allocate_ccb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C5EB4": [
+"800C5EB4",
+"l2cu_release_ccb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6058": [
+"800C6058",
+"l2cu_find_ccb_by_cid",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C60B4": [
+"800C60B4",
+"l2cu_allocate_rcb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6100": [
+"800C6100",
+"l2cu_release_rcb",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C6110": [
+"800C6110",
+"l2cu_find_rcb_by_psm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C61C8": [
+"800C61C8",
+"l2cu_process_peer_cfg_req",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C6310": [
+"800C6310",
+"l2cu_process_peer_cfg_rsp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C6350": [
+"800C6350",
+"l2cu_process_our_cfg_req",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C6460": [
+"800C6460",
+"l2cu_process_our_cfg_rsp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C64A0": [
+"800C64A0",
+"l2cu_device_reset",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6624": [
+"800C6624",
+"l2cu_create_conn_after_switch",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C66F4": [
+"800C66F4",
+"l2cu_find_lcb_by_state",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6784": [
+"800C6784",
+"l2cu_lcb_disconnecting",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C686C": [
+"800C686C",
+"RFCOMM_Init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6A1C": [
+"800C6A1C",
+"PORT_StartInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C6D6C": [
+"800C6D6C",
+"PORT_DlcEstablishInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7140": [
+"800C7140",
+"PORT_PortNegCnf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7258": [
+"800C7258",
+"PORT_ControlInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C73D0": [
+"800C73D0",
+"PORT_ControlCnf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7494": [
+"800C7494",
+"PORT_LineStatusInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C755C": [
+"800C755C",
+"PORT_DlcReleaseInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C75C4": [
+"800C75C4",
+"PORT_CloseInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7664": [
+"800C7664",
+"Port_TimeOutCloseMux",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7B24": [
+"800C7B24",
+"port_rfc_closed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7CB8": [
+"800C7CB8",
+"port_select_mtu",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7E34": [
+"800C7E34",
+"port_release_port",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7F10": [
+"800C7F10",
+"port_find_mcb_dlci_port",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7F64": [
+"800C7F64",
+"port_find_dlci_port",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C7FEC": [
+"800C7FEC",
+"port_flow_control_user",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C805C": [
+"800C805C",
+"port_get_signal_changes",
+"contra-rebirth-recomp",
+"strict"
+],
+"800C80C4": [
+"800C80C4",
+"port_flow_control_peer",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8290": [
+"800C8290",
+"rfcomm_l2cap_if_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C830C": [
+"800C830C",
+"RFCOMM_ConnectInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8398": [
+"800C8398",
+"RFCOMM_ConnectCnf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C86B0": [
+"800C86B0",
+"RFCOMM_DisconnectInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8A74": [
+"800C8A74",
+"RFCOMM_CongestionStatusInd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8BA8": [
+"800C8BA8",
+"rfc_save_lcid_mcb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8C08": [
+"800C8C08",
+"rfc_mx_sm_state_idle",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8E1C": [
+"800C8E1C",
+"rfc_mx_sm_state_wait_conn_cnf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C8FD8": [
+"800C8FD8",
+"rfc_mx_sm_state_configure",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9100": [
+"800C9100",
+"rfc_mx_sm_sabme_wait_ua",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9274": [
+"800C9274",
+"rfc_mx_sm_state_wait_sabme",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9394": [
+"800C9394",
+"rfc_mx_sm_state_connected",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C94AC": [
+"800C94AC",
+"rfc_mx_sm_state_disc_wait_ua",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9624": [
+"800C9624",
+"rfc_mx_conf_cnf",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9718": [
+"800C9718",
+"rfc_mx_conf_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9898": [
+"800C9898",
+"rfc_port_sm_state_closed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9A0C": [
+"800C9A0C",
+"rfc_port_sm_sabme_wait_ua",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9BA8": [
+"800C9BA8",
+"rfc_port_sm_term_wait_sec_check",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9D64": [
+"800C9D64",
+"rfc_port_sm_orig_wait_sec_check",
+"contra-rebirth-recomp",
+"loose"
+],
+"800C9EB4": [
+"800C9EB4",
+"rfc_port_sm_opened",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA0A0": [
+"800CA0A0",
+"rfc_port_sm_disc_wait_ua",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA1BC": [
+"800CA1BC",
+"rfc_process_pn",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA2A4": [
+"800CA2A4",
+"rfc_process_rpn",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CA71C": [
+"800CA71C",
+"rfc_process_rls",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CA7A8": [
+"800CA7A8",
+"rfc_process_nsc",
+"contra-rebirth-recomp",
+"prop"
+],
+"800CA7AC": [
+"800CA7AC",
+"rfc_process_test_rsp",
+"contra-rebirth-recomp",
+"prop"
+],
+"800CA7B4": [
+"800CA7B4",
+"rfc_process_fcon",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA818": [
+"800CA818",
+"rfc_process_fcoff",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA87C": [
+"800CA87C",
+"rfc_process_l2cap_congestion",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CA904": [
+"800CA904",
+"rfc_set_port_state",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CA9A8": [
+"800CA9A8",
+"RFCOMM_StartRsp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CA9D4": [
+"800CA9D4",
+"RFCOMM_DlcEstablishReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAA3C": [
+"800CAA3C",
+"RFCOMM_DlcEstablishRsp",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAAAC": [
+"800CAAAC",
+"RFCOMM_ParNegReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CABB4": [
+"800CABB4",
+"RFCOMM_PortNegReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAC90": [
+"800CAC90",
+"RFCOMM_ControlReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAD34": [
+"800CAD34",
+"RFCOMM_FlowReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CADD8": [
+"800CADD8",
+"RFCOMM_LineStatusReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAE70": [
+"800CAE70",
+"RFCOMM_DlcReleaseReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CAE9C": [
+"800CAE9C",
+"RFCOMM_DataReq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB1A8": [
+"800CB1A8",
+"rfc_send_buf_uih",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB428": [
+"800CB428",
+"rfc_send_fcon",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB4AC": [
+"800CB4AC",
+"rfc_send_fcoff",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB650": [
+"800CB650",
+"rfc_send_rls",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB81C": [
+"800CB81C",
+"rfc_send_test",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CB984": [
+"800CB984",
+"rfc_parse_data",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CBEF8": [
+"800CBEF8",
+"rfc_process_mx_message",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC51C": [
+"800CC51C",
+"rfc_calc_fcs",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC554": [
+"800CC554",
+"rfc_check_fcs",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC6F8": [
+"800CC6F8",
+"rfc_release_multiplexer_channel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC780": [
+"800CC780",
+"rfc_timer_start",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC7F4": [
+"800CC7F4",
+"rfc_timer_stop",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC84C": [
+"800CC84C",
+"rfc_port_timer_start",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC8CC": [
+"800CC8CC",
+"rfc_port_timer_stop",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CC924": [
+"800CC924",
+"rfc_check_mcb_active",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CCA24": [
+"800CCA24",
+"rfc_sec_check_complete",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CCA78": [
+"800CCA78",
+"rfc_port_closed",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CCBD0": [
+"800CCBD0",
+"rfc_inc_credit",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CCC5C": [
+"800CCC5C",
+"rfc_dec_credit",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CCC98": [
+"800CCC98",
+"rfc_check_send_cmd",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD074": [
+"800CD074",
+"SDP_ServiceSearchRequest",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD0D0": [
+"800CD0D0",
+"SDP_ServiceSearchAttributeRequest",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD134": [
+"800CD134",
+"SDP_FindAttributeInRec",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD15C": [
+"800CD15C",
+"SDP_FindServiceInDb",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD228": [
+"800CD228",
+"SDP_FindServiceUUIDInDb",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CD330": [
+"800CD330",
+"SDP_SetLocalDiRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CD690": [
+"800CD690",
+"SDP_GetLocalDiRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CDB40": [
+"800CDB40",
+"SDP_SetTraceLevel",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CDD78": [
+"800CDD78",
+"sdp_db_find_record",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CDDD4": [
+"800CDDD4",
+"sdp_db_find_attr_in_rec",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CDE14": [
+"800CDE14",
+"SDP_CreateRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CDEF4": [
+"800CDEF4",
+"SDP_DeleteRecord",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CE3A0": [
+"800CE3A0",
+"SDP_AddUuidSequence",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CE478": [
+"800CE478",
+"SDP_AddServiceClassIdList",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CE830": [
+"800CE830",
+"sdpu_build_uuid_seq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CEA4C": [
+"800CEA4C",
+"sdp_disc_connected",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CEA80": [
+"800CEA80",
+"sdp_disc_server_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CEBC0": [
+"800CEBC0",
+"process_service_search_rsp",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CF470": [
+"800CF470",
+"add_record",
+"contra-rebirth-recomp",
+"strict"
+],
+"800CFAA8": [
+"800CFAA8",
+"sdp_init",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CFC48": [
+"800CFC48",
+"sdp_connect_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CFD0C": [
+"800CFD0C",
+"sdp_connect_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CFE9C": [
+"800CFE9C",
+"sdp_config_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800CFFD8": [
+"800CFFD8",
+"sdp_config_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D0154": [
+"800D0154",
+"sdp_disconnect_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D024C": [
+"800D024C",
+"sdp_data_ind",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D0320": [
+"800D0320",
+"sdp_conn_originate",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D0434": [
+"800D0434",
+"sdp_disconnect",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D04D0": [
+"800D04D0",
+"sdp_disconnect_cfm",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D058C": [
+"800D058C",
+"sdp_conn_timeout",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D0614": [
+"800D0614",
+"sdp_server_handle_client_req",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D0768": [
+"800D0768",
+"process_service_search",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D1324": [
+"800D1324",
+"sdpu_find_ccb_by_cid",
+"contra-rebirth-recomp",
+"prop"
+],
+"800D13B4": [
+"800D13B4",
+"sdpu_allocate_ccb",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D1428": [
+"800D1428",
+"sdpu_release_ccb",
+"contra-rebirth-recomp",
+"strict"
+],
+"800D1460": [
+"800D1460",
+"sdpu_build_attrib_seq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800D1630": [
+"800D1630",
+"sdpu_build_attrib_entry",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D18C0": [
+"800D18C0",
+"sdpu_extract_uid_seq",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D1C10": [
+"800D1C10",
+"sdpu_extract_attr_seq",
+"contra-rebirth-recomp",
+"strict"
+],
+"800D1E60": [
+"800D1E60",
+"sdpu_get_len_from_type",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D1F30": [
+"800D1F30",
+"sdpu_is_base_uuid",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D2010": [
+"800D2010",
+"sdpu_compare_uuid_arrays",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D2284": [
+"800D2284",
+"sdpu_compare_uuid_with_attr",
+"contra-rebirth-recomp",
+"strict"
+],
+"800D2314": [
+"800D2314",
+"sdpu_sort_attr_list",
+"contra-rebirth-recomp",
+"strict"
+],
+"800D2370": [
+"800D2370",
+"USB_LOG",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D2420": [
+"800D2420",
+"USB_ERR",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D24D0": [
+"800D24D0",
+"IUSB_OpenLib",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D25D0": [
+"800D25D0",
+"IUSB_CloseLib",
+"contra-rebirth-recomp",
+"prop"
+],
+"800D3280": [
+"800D3280",
+"__CtrlMsgInt",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D3E40": [
+"800D3E40",
+"calc_acc",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D3F00": [
+"800D3F00",
+"calc_acc_horizon",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D40A0": [
+"800D40A0",
+"calc_acc_vertical",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D4B80": [
+"800D4B80",
+"select_1obj_first",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D4D40": [
+"800D4D40",
+"select_1obj_continue",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D5960": [
+"800D5960",
+"clamp_stick_circle",
+"contra-rebirth-recomp",
+"loose"
+],
+"800D5A90": [
+"800D5A90",
+"clamp_stick_cross",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB3E0": [
+"800DB3E0",
+"ESP_InitLib",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB440": [
+"800DB440",
+"ESP_CloseLib",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB650": [
+"800DB650",
+"ESP_DiGetTicketView",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB700": [
+"800DB700",
+"ESP_DiGetTmd",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB900": [
+"800DB900",
+"ESP_GetDataDir",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DB9A0": [
+"800DB9A0",
+"ESP_GetTitleId",
+"contra-rebirth-recomp",
+"loose"
+],
+"800DBB10": [
+"800DBB10",
+"__ct__Q34nw4r3lyt12AnimResourceFv",
+"mylifedarklord-recomp",
+"loose"
+],
+"801018C4": [
+"801018C4",
+"initFrame__Q210homebutton15FrameControllerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80101A34": [
+"80101A34",
+"__ct__Q210homebutton18GroupAnmControllerFv",
+"mylifedarklord-recomp",
+"loose"
+],
+"80101A90": [
+"80101A90",
+"do_calc__Q210homebutton18GroupAnmControllerFv",
+"mylifedarklord-recomp",
+"strict"
+],
+"80101B40": [
+"80101B40",
+"drawLine___Q210homebutton3guiFfffffUcR8_GXColor",
+"mylifedarklord-recomp",
+"loose"
+],
+"80101D04": [
+"80101D04",
+"update__Q310homebutton3gui9ComponentFiffUlUlUlPv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80101F14": [
+"80101F14",
+"isPointed__Q310homebutton3gui9ComponentFi",
+"contra-rebirth-recomp",
+"strict"
+],
+"80101F50": [
+"80101F50",
+"setPointed__Q310homebutton3gui9ComponentFib",
+"contra-rebirth-recomp",
+"strict"
+],
+"80101F64": [
+"80101F64",
+"__dt__Q310homebutton3gui7ManagerFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80102020": [
+"80102020",
+"init__Q310homebutton3gui7ManagerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102088": [
+"80102088",
+"init__Q310homebutton3gui9ComponentFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"801020B4": [
+"801020B4",
+"addComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102180": [
+"80102180",
+"delComponent__Q310homebutton3gui7ManagerFPQ310homebutton3gui9Component",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102220": [
+"80102220",
+"getComponent__Q310homebutton3gui7ManagerFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"801023F8": [
+"801023F8",
+"onTrig__Q310homebutton3gui9ComponentFUlR3Vec",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102428": [
+"80102428",
+"calc__Q310homebutton3gui7ManagerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102494": [
+"80102494",
+"draw__Q310homebutton3gui7ManagerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102500": [
+"80102500",
+"setAllComponentTriggerTarget__Q310homebutton3gui7ManagerFb",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102580": [
+"80102580",
+"__dt__Q310homebutton3gui11PaneManagerFv",
+"mylifedarklord-recomp",
+"loose"
+],
+"80102754": [
+"80102754",
+"createLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout",
+"mylifedarklord-recomp",
+"loose"
+],
+"80102778": [
+"80102778",
+"addLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102A34": [
+"80102A34",
+"delLayoutScene__Q310homebutton3gui11PaneManagerFRCQ36nw4hbm3lyt6Layout",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102B68": [
+"80102B68",
+"getPaneComponentByPane__Q310homebutton3gui11PaneManagerFPQ36nw4hbm3lyt4Pane",
+"contra-rebirth-recomp",
+"strict"
+],
+"80102F84": [
+"80102F84",
+"is_visible__Q210homebutton3guiFPQ36nw4hbm3lyt4Pane",
+"contra-rebirth-recomp",
+"strict"
+],
+"80103084": [
+"80103084",
+"IsVisible__Q36nw4hbm3lyt4PaneCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80103090": [
+"80103090",
+"GetParent__Q36nw4hbm3lyt4PaneCFv",
+"contra-rebirth-recomp",
+"prop"
+],
+"801033F8": [
+"801033F8",
+"soundOnCallback__Q210homebutton10ControllerFP7OSAlarmP9OSContext",
+"contra-rebirth-recomp",
+"loose"
+],
+"80103520": [
+"80103520",
+"__dt__Q210homebutton10ControllerFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010383C": [
+"8010383C",
+"clrKpadButton__Q210homebutton10ControllerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80103850": [
+"80103850",
+"setInValidPos__Q210homebutton10ControllerFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80103888": [
+"80103888",
+"playSound__Q210homebutton10ControllerFi",
+"contra-rebirth-recomp",
+"loose"
+],
+"80103924": [
+"80103924",
+"isPlayingSoundId__Q210homebutton10ControllerCFi",
+"contra-rebirth-recomp",
+"strict"
+],
+"80103984": [
+"80103984",
+"initSound__Q210homebutton10ControllerFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80103BE0": [
+"80103BE0",
+"startMotor__Q210homebutton10ControllerFv",
+"mylifedarklord-recomp",
+"strict"
+],
+"80103D1C": [
+"80103D1C",
+"getBatteryFlag__Q210homebutton10ControllerCFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80103D40": [
+"80103D40",
+"clrBatteryFlag__Q210homebutton10ControllerFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80103FC8": [
+"80103FC8",
+"ClearPcm__Q210homebutton9RemoteSpkFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80104228": [
+"80104228",
+"Stop__Q210homebutton9RemoteSpkFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"801044A0": [
+"801044A0",
+"Disconnect__Q210homebutton9RemoteSpkFl",
+"contra-rebirth-recomp",
+"loose"
+],
+"801045C4": [
+"801045C4",
+"isPlaying__Q210homebutton9RemoteSpkCFl",
+"contra-rebirth-recomp",
+"strict"
+],
+"801045E0": [
+"801045E0",
+"isPlayingId__Q210homebutton9RemoteSpkCFli",
+"contra-rebirth-recomp",
+"strict"
+],
+"80104610": [
+"80104610",
+"isPlayReady__Q210homebutton9RemoteSpkCFl",
+"contra-rebirth-recomp",
+"strict"
+],
+"801047E8": [
+"801047E8",
+"AudioFrameCallback__24@unnamed@HBMAxSound_cpp@Fv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80104DDC": [
+"80104DDC",
+"ShutdownAxSound__10homebuttonFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80105048": [
+"80105048",
+"SetVolumeAllSeq__10homebuttonFf",
+"contra-rebirth-recomp",
+"loose"
+],
+"801052B4": [
+"801052B4",
+"HBMDelete",
+"contra-rebirth-recomp",
+"loose"
+],
+"80105324": [
+"80105324",
+"HBMInit",
+"contra-rebirth-recomp",
+"loose"
+],
+"80105354": [
+"80105354",
+"HBMCalc",
+"contra-rebirth-recomp",
+"strict"
+],
+"801053D8": [
+"801053D8",
+"HBMSetAdjustFlag",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010D8C4": [
+"8010D8C4",
+"GetStepCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res7StepKeyUl",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010D9B4": [
+"8010D9B4",
+"GetHermiteCurveValue__27@unnamed@lyt_animation_cpp@FfPCQ46nw4hbm3lyt3res10HermiteKeyUl",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010DB78": [
+"8010DB78",
+"GetFrameSize__Q36nw4hbm3lyt13AnimTransformCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010DB84": [
+"8010DB84",
+"__ct__Q36nw4hbm3lyt18AnimTransformBasicFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010DBBC": [
+"8010DBBC",
+"__dt__Q36nw4hbm3lyt18AnimTransformBasicFv",
+"mylifedarklord-recomp",
+"loose"
+],
+"8010DE90": [
+"8010DE90",
+"Bind__Q36nw4hbm3lyt18AnimTransformBasicFPQ36nw4hbm3lyt8Material",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010E460": [
+"8010E460",
+"FindNameResource__37@unnamed@lyt_arcResourceAccessor_cpp@FP9ARCHandlePCc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010E75C": [
+"8010E75C",
+"GetResource__Q36nw4hbm3lyt19ArcResourceAccessorFUlPCcPUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010E77C": [
+"8010E77C",
+"GetFont__Q36nw4hbm3lyt19ArcResourceAccessorFPCc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010E950": [
+"8010E950",
+"EqualsPaneName__Q36nw4hbm3lyt6detailFPCcPCc",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010E97C": [
+"8010E97C",
+"EqualsMaterialName__Q36nw4hbm3lyt6detailFPCcPCc",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010E9A8": [
+"8010E9A8",
+"TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeader",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010E9D0": [
+"8010E9D0",
+"TestFileHeader__Q36nw4hbm3lyt6detailFRCQ46nw4hbm3lyt3res16BinaryFileHeaderUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010EA04": [
+"8010EA04",
+"__ct__Q46nw4hbm3lyt6detail11TexCoordAryFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010EA18": [
+"8010EA18",
+"Free__Q46nw4hbm3lyt6detail11TexCoordAryFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010EA68": [
+"8010EA68",
+"Reserve__Q46nw4hbm3lyt6detail11TexCoordAryFUc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010EAF0": [
+"8010EAF0",
+"SetSize__Q46nw4hbm3lyt6detail11TexCoordAryFUc",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010EBE8": [
+"8010EBE8",
+"Copy__Q44nw4r3lyt6detail11TexCoordAryFPCvUc",
+"mylifedarklord-recomp",
+"strict"
+],
+"8010EC7C": [
+"8010EC7C",
+"IsModulateVertexColor__Q36nw4hbm3lyt6detailFPQ36nw4hbm2ut5ColorUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010ECE4": [
+"8010ECE4",
+"MultipleAlpha__Q34nw4r3lyt6detailFQ34nw4r2ut5ColorUc",
+"mylifedarklord-recomp",
+"strict"
+],
+"8010ED38": [
+"8010ED38",
+"SetVertexFormat__Q36nw4hbm3lyt6detailFbUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010F764": [
+"8010F764",
+"__ct__Q36nw4hbm3lyt8DrawInfoFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"8010FA9C": [
+"8010FA9C",
+"AppendGroup__Q36nw4hbm3lyt14GroupContainerFPQ36nw4hbm3lyt5Group",
+"contra-rebirth-recomp",
+"strict"
+],
+"8010FAD0": [
+"8010FAD0",
+"FindGroupByName__Q36nw4hbm3lyt14GroupContainerFPCc",
+"contra-rebirth-recomp",
+"strict"
+],
+"80110330": [
+"80110330",
+"UnbindAllAnimation__Q36nw4hbm3lyt6LayoutFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80111D6C": [
+"80111D6C",
+"__dt__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80112594": [
+"80112594",
+"GetTexSRTAry__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"801125A8": [
+"801125A8",
+"GetTexCoordGenAry__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"801125C8": [
+"801125C8",
+"GetIndTexSRTAry__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80112620": [
+"80112620",
+"SetTextureNum__Q36nw4hbm3lyt8MaterialFUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"801126B0": [
+"801126B0",
+"SetTexCoordGenNum__Q36nw4hbm3lyt8MaterialFUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"80112804": [
+"80112804",
+"SetTextureNoWrap__Q36nw4hbm3lyt8MaterialFUcP10TPLPalette",
+"contra-rebirth-recomp",
+"strict"
+],
+"80112888": [
+"80112888",
+"SetTexture__Q36nw4hbm3lyt8MaterialFUcRC9_GXTexObj",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011396C": [
+"8011396C",
+"BindAnimation__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransform",
+"contra-rebirth-recomp",
+"strict"
+],
+"80113A08": [
+"80113A08",
+"UnbindAllAnimation__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80113A1C": [
+"80113A1C",
+"Animate__Q36nw4hbm3lyt8MaterialFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80113A94": [
+"80113A94",
+"AddAnimationLink__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimationLink",
+"contra-rebirth-recomp",
+"strict"
+],
+"80113AD0": [
+"80113AD0",
+"SetAnimationEnable__Q36nw4hbm3lyt8MaterialFPQ36nw4hbm3lyt13AnimTransformb",
+"contra-rebirth-recomp",
+"strict"
+],
+"80113E88": [
+"80113E88",
+"AppendChild__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt4Pane",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114478": [
+"80114478",
+"Draw__Q34nw4r3lyt4PaneFRCQ34nw4r3lyt8DrawInfo",
+"mylifeking-recomp",
+"loose"
+],
+"80114578": [
+"80114578",
+"Animate__Q36nw4hbm3lyt4PaneFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114604": [
+"80114604",
+"AnimateSelf__Q36nw4hbm3lyt4PaneFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"801146B8": [
+"801146B8",
+"BindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb",
+"contra-rebirth-recomp",
+"strict"
+],
+"801146D4": [
+"801146D4",
+"UnbindAnimation__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransformb",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114764": [
+"80114764",
+"UnbindAllAnimation__Q36nw4hbm3lyt4PaneFb",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011481C": [
+"8011481C",
+"AddAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimationLink",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114850": [
+"80114850",
+"FindAnimationLink__Q36nw4hbm3lyt4PaneFPQ36nw4hbm3lyt13AnimTransform",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114D98": [
+"80114D98",
+"Append__Q36nw4hbm3lyt7PictureFP10TPLPalette",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114F80": [
+"80114F80",
+"SetVtxColor__Q36nw4hbm3lyt7PictureFUlQ36nw4hbm2ut5Color",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114FAC": [
+"80114FAC",
+"GetVtxColorElement__Q36nw4hbm3lyt7PictureCFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114FC4": [
+"80114FC4",
+"SetVtxColorElement__Q36nw4hbm3lyt7PictureFUlUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"80114FDC": [
+"80114FDC",
+"DrawSelf__Q36nw4hbm3lyt7PictureFRCQ36nw4hbm3lyt8DrawInfo",
+"contra-rebirth-recomp",
+"strict"
+],
+"80115130": [
+"80115130",
+"GetColor__Q34nw4r3lyt25@unnamed@lyt_textBox_cpp@FRC11_GXColorS10",
+"mylifedarklord-recomp",
+"strict"
+],
+"801156A4": [
+"801156A4",
+"SetVtxColor__Q34nw4r3lyt7PictureFUlQ34nw4r2ut5Color",
+"mylifeking-recomp",
+"strict"
+],
+"801156D0": [
+"801156D0",
+"GetVtxColorElement__Q36nw4hbm3lyt7TextBoxCFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"801156E8": [
+"801156E8",
+"SetVtxColorElement__Q36nw4hbm3lyt7TextBoxFUlUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116094": [
+"80116094",
+"GetCharStrmReader__Q34nw4r2ut4FontCFv",
+"mylifedarklord-recomp",
+"strict"
+],
+"801160CC": [
+"801160CC",
+"AllocStringBuffer__Q36nw4hbm3lyt7TextBoxFUs",
+"contra-rebirth-recomp",
+"loose"
+],
+"80116148": [
+"80116148",
+"FreeStringBuffer__Q36nw4hbm3lyt7TextBoxFv",
+"contra-rebirth-recomp",
+"loose"
+],
+"80116194": [
+"80116194",
+"SetString__Q36nw4hbm3lyt7TextBoxFPCwUs",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116C14": [
+"80116C14",
+"FindAnimationLink__Q36nw4hbm3lyt6WindowFPQ36nw4hbm3lyt13AnimTransform",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116D78": [
+"80116D78",
+"SetVtxColor__Q36nw4hbm3lyt6WindowFUlQ36nw4hbm2ut5Color",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116DA4": [
+"80116DA4",
+"GetVtxColorElement__Q36nw4hbm3lyt6WindowCFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116DBC": [
+"80116DBC",
+"SetVtxColorElement__Q36nw4hbm3lyt6WindowFUlUc",
+"contra-rebirth-recomp",
+"strict"
+],
+"80116DD4": [
+"80116DD4",
+"DrawSelf__Q34nw4r3lyt6WindowFRCQ34nw4r3lyt8DrawInfo",
+"mylifeking-recomp",
+"loose"
+],
+"80116F14": [
+"80116F14",
+"AnimateSelf__Q34nw4r3lyt6WindowFUl",
+"mylifeking-recomp",
+"loose"
+],
+"80116FA4": [
+"80116FA4",
+"UnbindAnimationSelf__Q34nw4r3lyt6WindowFPQ34nw4r3lyt13AnimTransform",
+"mylifeking-recomp",
+"loose"
+],
+"80118B1C": [
+"80118B1C",
+"GetFrameSize__Q34nw4r3lyt6WindowFUcPCQ44nw4r3lyt6Window5Frame",
+"mylifeking-recomp",
+"strict"
+],
+"80118C1C": [
+"80118C1C",
+"GetFrameMaterial__Q36nw4hbm3lyt6WindowCFUl",
+"contra-rebirth-recomp",
+"strict"
+],
+"80118C44": [
+"80118C44",
+"GetContentMaterial__Q36nw4hbm3lyt6WindowCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"80118EF8": [
+"80118EF8",
+"IsValidBinaryFile__Q24nw4r2utFPCQ34nw4r2ut16BinaryFileHeaderUlUsUs",
+"mylifedarklord-recomp",
+"prop"
+],
+"80118F6C": [
+"80118F6C",
+"ReadNextCharUTF8__Q34nw4r2ut14CharStrmReaderFv",
+"mylifeking-recomp",
+"strict"
+],
+"80118FE4": [
+"80118FE4",
+"ReadNextCharUTF16__Q34nw4r2ut14CharStrmReaderFv",
+"mylifeking-recomp",
+"strict"
+],
+"80119000": [
+"80119000",
+"ReadNextCharCP1252__Q34nw4r2ut14CharStrmReaderFv",
+"mylifeking-recomp",
+"strict"
+],
+"8011901C": [
+"8011901C",
+"ReadNextCharSJIS__Q34nw4r2ut14CharStrmReaderFv",
+"mylifeking-recomp",
+"strict"
+],
+"80119D70": [
+"80119D70",
+"SetColorMapping__Q36nw4hbm2ut10CharWriterFQ36nw4hbm2ut5ColorQ36nw4hbm2ut5Color",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011A53C": [
+"8011A53C",
+"SetCursor__Q36nw4hbm2ut10CharWriterFff",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011A558": [
+"8011A558",
+"MoveCursorX__Q36nw4hbm2ut10CharWriterFf",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011A568": [
+"8011A568",
+"MoveCursorY__Q36nw4hbm2ut10CharWriterFf",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011AB6C": [
+"8011AB6C",
+"InitReaderFunc__Q34nw4r2ut4FontFQ34nw4r2ut12FontEncoding",
+"mylifedarklord-recomp",
+"loose"
+],
+"8011AC14": [
+"8011AC14",
+"__dt__Q46nw4hbm2ut6detail12LinkListImplFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011AC98": [
+"8011AC98",
+"Erase__Q46nw4hbm2ut6detail12LinkListImplFQ56nw4hbm2ut6detail12LinkListImpl8Iterator",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011ACE0": [
+"8011ACE0",
+"Insert__Q44nw4r2ut6detail12LinkListImplFQ54nw4r2ut6detail12LinkListImpl8IteratorPQ34nw4r2ut12LinkListNode",
+"mylifedarklord-recomp",
+"strict"
+],
+"8011AD24": [
+"8011AD24",
+"List_Append__Q26nw4hbm2utFPQ36nw4hbm2ut4ListPv",
+"contra-rebirth-recomp",
+"prop"
+],
+"8011AD94": [
+"8011AD94",
+"List_Remove__Q24nw4r2utFPQ34nw4r2ut4ListPv",
+"mylifedarklord-recomp",
+"strict"
+],
+"8011AE00": [
+"8011AE00",
+"List_GetNext__Q26nw4hbm2utFPCQ36nw4hbm2ut4ListPCv",
+"contra-rebirth-recomp",
+"prop"
+],
+"8011AF00": [
+"8011AF00",
+"SetResource__Q34nw4r2ut7ResFontFPv",
+"mylifedarklord-recomp",
+"loose"
+],
+"8011B044": [
+"8011B044",
+"Rebuild__Q34nw4r2ut7ResFontFPQ34nw4r2ut16BinaryFileHeader",
+"mylifedarklord-recomp",
+"strict"
+],
+"8011B1F4": [
+"8011B1F4",
+"SetResourceBuffer__Q46nw4hbm2ut6detail11ResFontBaseFPvPQ36nw4hbm2ut15FontInformation",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B200": [
+"8011B200",
+"GetWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B20C": [
+"8011B20C",
+"GetHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B218": [
+"8011B218",
+"GetAscent__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B224": [
+"8011B224",
+"GetDescent__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B238": [
+"8011B238",
+"GetBaselinePos__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B24C": [
+"8011B24C",
+"GetCellHeight__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B25C": [
+"8011B25C",
+"GetCellWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B26C": [
+"8011B26C",
+"GetMaxCharWidth__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B284": [
+"8011B284",
+"GetTextureFormat__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B294": [
+"8011B294",
+"GetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B2A4": [
+"8011B2A4",
+"GetDefaultCharWidths__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B2BC": [
+"8011B2BC",
+"SetDefaultCharWidths__Q44nw4r2ut6detail11ResFontBaseFRCQ34nw4r2ut10CharWidths",
+"mylifeking-recomp",
+"strict"
+],
+"8011B374": [
+"8011B374",
+"SetLineFeed__Q46nw4hbm2ut6detail11ResFontBaseFi",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B380": [
+"8011B380",
+"GetCharWidth__Q44nw4r2ut6detail11ResFontBaseCFUs",
+"mylifeking-recomp",
+"strict"
+],
+"8011B55C": [
+"8011B55C",
+"GetEncoding__Q46nw4hbm2ut6detail11ResFontBaseCFv",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011B568": [
+"8011B568",
+"FindGlyphIndex__Q44nw4r2ut6detail11ResFontBaseCFPCQ34nw4r2ut11FontCodeMapUs",
+"mylifedarklord-recomp",
+"strict"
+],
+"8011DC58": [
+"8011DC58",
+"HBMMIXSetSoundMode",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011E5B4": [
+"8011E5B4",
+"HBMMIXReleaseChannel",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011E5E0": [
+"8011E5E0",
+"HBMMIXSetInput",
+"contra-rebirth-recomp",
+"prop"
+],
+"8011E618": [
+"8011E618",
+"HBMMIXSetAuxA",
+"contra-rebirth-recomp",
+"prop"
+],
+"8011E650": [
+"8011E650",
+"HBMMIXSetPan",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011E6D0": [
+"8011E6D0",
+"HBMMIXSetFader",
+"contra-rebirth-recomp",
+"prop"
+],
+"8011F258": [
+"8011F258",
+"HBMGetIndex",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011F26C": [
+"8011F26C",
+"HBMFreeIndex",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011F294": [
+"8011F294",
+"HBMFreeIndexByKey",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011F34C": [
+"8011F34C",
+"HBMSYNInit",
+"mylifedarklord-recomp",
+"loose"
+],
+"8011F43C": [
+"8011F43C",
+"HBMSYNRunAudioFrame",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011F728": [
+"8011F728",
+"HBMSYNSetMasterVolume",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011FB64": [
+"8011FB64",
+"__HBMSYNRunInputBufferEvents",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011FFB0": [
+"8011FFB0",
+"__HBMSYNSetupVolume",
+"contra-rebirth-recomp",
+"loose"
+],
+"8011FFD8": [
+"8011FFD8",
+"__HBMSYNSetupPan",
+"contra-rebirth-recomp",
+"strict"
+],
+"8011FFF0": [
+"8011FFF0",
+"__HBMSYNGetVoiceInput",
+"contra-rebirth-recomp",
+"strict"
+],
+"80120004": [
+"80120004",
+"__HBMSYNGetVoiceFader",
+"contra-rebirth-recomp",
+"strict"
+],
+"80120028": [
+"80120028",
+"__HBMSYNUpdateMix",
+"contra-rebirth-recomp",
+"strict"
+],
+"801200C8": [
+"801200C8",
+"__HBMSYNGetRelativePitch",
+"contra-rebirth-recomp",
+"loose"
+],
+"80120240": [
+"80120240",
+"__HBMSYNSetupSrc",
+"contra-rebirth-recomp",
+"loose"
+],
+"801202DC": [
+"801202DC",
+"__HBMSYNUpdateSrc",
+"contra-rebirth-recomp",
+"loose"
+],
+"801207A8": [
+"801207A8",
+"__HBMSYNClearVoiceReferences",
+"contra-rebirth-recomp",
+"loose"
+],
+"8012084C": [
+"8012084C",
+"__HBMSYNSetVoiceToRelease",
+"contra-rebirth-recomp",
+"strict"
+],
+"80120858": [
+"80120858",
+"__HBMSYNServiceVoice",
+"contra-rebirth-recomp",
+"loose"
+]
+}
