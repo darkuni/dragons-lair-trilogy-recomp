@@ -591,8 +591,8 @@ int main(int argc, char** argv) {
     extern void nand_init(const char*); nand_init(root);
     signal(SIGABRT, on_signal);
 #ifndef _WIN32
-    signal(SIGALRM, on_signal);
-    alarm(getenv("TIMEOUT") ? atoi(getenv("TIMEOUT")) : 15);
+    // test watchdog (headless runs only): TIMEOUT=<seconds> dumps the state and stops the game
+    if (getenv("TIMEOUT") && atoi(getenv("TIMEOUT")) > 0) { signal(SIGALRM, on_signal); alarm(atoi(getenv("TIMEOUT"))); }
 #endif
 #ifndef _WIN32
     struct sigaction sa = {}; sa.sa_sigaction = on_segv; sa.sa_flags = SA_SIGINFO;
