@@ -57,3 +57,4 @@ WPADRead            # raw status: Geometry Wars reads Classic/Nunchuk this way
 EXIGetID = 0        # EXIInit probes EXI for a USB Gecko / debugger: report none
 WPADGetStatus = 3   # no Bluetooth stack: report setup done
 __AXOutQuit         # no DSP to confirm the cancel: unlink the task and stop audio DMA (movie player re-inits AX per movie)
+AISetDSPSampleRate  # 0 = 32 kHz, 1 = 48 kHz (raw AI DMA pacing / resampling)

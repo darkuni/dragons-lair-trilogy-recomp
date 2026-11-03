@@ -736,7 +736,7 @@ const FnEntry FN_TABLE[] = {
   {0x80061190u, 0x18u, f_80061190, "AIGetDMAStartAddr"},
   {0x800611B0u, 0x10u, f_800611B0, "AIGetDMALength"},
   {0x800611C0u, 0x8u, f_800611C0, "fn_800611C0"},
-  {0x800611D0u, 0x78u, f_800611D0, "fn_800611D0"},
+  {0x800611D0u, 0x78u, f_800611D0, "AISetDSPSampleRate"},
   {0x80061250u, 0x180u, f_80061250, "AIInit"},
   {0x800613D0u, 0xA8u, f_800613D0, "__AIDHandler"},
   {0x80061480u, 0x64u, f_80061480, "__AICallbackStackSwitch"},

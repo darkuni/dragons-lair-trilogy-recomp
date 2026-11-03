@@ -17,3 +17,4 @@
 800635F0 __AXOutQuit            # cancels the AX DSP task and sleeps until the DSP confirms (replaced)
 800617A0 AXQuit
 800665C0 DSPCancelTask
+800611D0 AISetDSPSampleRate     # replaced: the runtime paces raw AI DMA at 32/48 kHz

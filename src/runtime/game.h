@@ -33,3 +33,7 @@
 #define G_FN_DSP_REMOVE_TASK    0x80066F20u   // __DSP_remove_task
 #define G_FN_AI_REGISTER_DMA_CB 0x80061070u
 #define G_FN_AI_STOP_DMA        0x80061160u
+
+// Raw AI DMA: the movie player streams PCM through AIInitDMA from its own AI callback (the game mixes its
+// sound effects into that stream). Blocks are played from guest memory unless the AX callback owns AI.
+#define G_AX_AI_CALLBACK        0x800631C0u   // __AXOutAiCallback

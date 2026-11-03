@@ -16,6 +16,7 @@
 #include <cstdlib>
 
 static uint32_t g_ai_cb = 0;           // guest AI DMA callback
+static std::atomic<int> g_ai_rate{32000};   // AI DMA sample rate (AISetDSPSampleRate)
 static uint32_t g_ai_buf = 0, g_ai_len = 0;
 static std::atomic<bool> g_ai_running{false};
 static std::atomic<int> g_ai_inflight{0};
@@ -28,31 +29,66 @@ static int g_ai_limit = getenv("AI_LIMIT") ? atoi(getenv("AI_LIMIT")) : 16;   //
 
 void audio_out(const int16_t* lr, int frames);   // host output (platform)
 
-void hle_AIRegisterDMACallback(Ctx* c) { uint32_t old = g_ai_cb; g_ai_cb = c->r[3]; c->r[3] = old; }
+void hle_AIRegisterDMACallback(Ctx* c) {
+    uint32_t old = g_ai_cb; g_ai_cb = c->r[3]; c->r[3] = old;
+    static bool log = getenv("AILOG") != nullptr;
+    extern uint64_t g_vi_count;
+    if (log) fprintf(g_log, "[ai] VI %llu callback %08X (was %08X) rate %d\n", (unsigned long long)g_vi_count, g_ai_cb, old, (int)g_ai_rate);
+}
 void hle_AIInitDMA(Ctx* c) { g_ai_buf = c->r[3]; g_ai_len = c->r[4]; }
+void hle_AISetDSPSampleRate(Ctx* c) { g_ai_rate = c->r[3] ? 48000 : 32000; }
+
+// Raw AI DMA (no AX mixer behind it, e.g. Dragon's Lair Trilogy's movie audio): play the block the game
+// queued, converted to the host's 32 kHz. Linear interpolation keeps its phase across blocks.
+static void raw_block_out(uint32_t buf, uint32_t len, int rate) {
+    static double pos = 0;                       // read position in the source stream (frames)
+    static int16_t prev[2] = {0, 0};             // last source frame of the previous block
+    uint32_t n = len / 4;
+    if (!n) return;
+    std::vector<int16_t> src(2 * (n + 1));
+    src[0] = prev[0]; src[1] = prev[1];
+    for (uint32_t i = 0; i < n; i++) { src[2 + 2 * i] = (int16_t)R16(buf + 4 * i); src[3 + 2 * i] = (int16_t)R16(buf + 4 * i + 2); }
+    std::vector<int16_t> out;
+    if (rate == 32000) {
+        out.assign(src.begin() + 2, src.end());
+    } else {
+        double step = (double)rate / 32000.0;
+        while (pos < (double)n) {                // src index pos+1 relative to prev
+            uint32_t i = (uint32_t)pos; double f = pos - i;
+            for (int ch = 0; ch < 2; ch++) {
+                double a = src[2 * i + ch], b = src[2 * (i + 1) + ch];
+                out.push_back((int16_t)(a + (b - a) * f));
+            }
+            pos += step;
+        }
+        pos -= (double)n;
+    }
+    prev[0] = src[2 * n]; prev[1] = src[2 * n + 1];
+    if (!out.empty()) audio_out(out.data(), (int)(out.size() / 2));
+}
 
 static void ai_thread() {
     using clk = std::chrono::steady_clock;
     auto next = clk::now();
-    const auto period = std::chrono::microseconds(3000);
     for (;;) {
+        // A DMA block starts: the hardware latches the programmed address/length and raises the AI
+        // interrupt, whose callback programs the following block. AX games use 3 ms blocks mixed on the
+        // host (ax_dsp.cpp sends them straight to the output); anything else plays the latched block.
+        uint32_t buf = g_ai_buf, len = g_ai_len;
+        int rate = g_ai_rate;
+        bool ax = g_ai_cb == G_AX_AI_CALLBACK;
+        auto period = std::chrono::microseconds(3000);
+        if (!ax && len >= 32) period = std::chrono::microseconds((int64_t)(len / 4) * 1000000 / rate);
         next += period;
-        precise_sleep_until(next);
         if (clk::now() - next > std::chrono::milliseconds(100)) next = clk::now();   // don't spiral after stalls
-        if (g_ai_inflight.load() > g_ai_limit) { g_ai_skipped++; continue; }
+        if (g_ai_inflight.load() > g_ai_limit) { g_ai_skipped++; precise_sleep_until(next); continue; }
+        if (!ax && g_ai_cb && buf && len) raw_block_out(buf, len, rate);
         g_ai_inflight++;
         post_irq([](Ctx* c) {
-            // the buffer that just "played" - only for games that don't mix through AX: AX frames go
-            // to the host straight from the mixer (ax_dsp.cpp), because reading the AI buffer here
-            // races the next mix (repeated, skipped or half-written 3 ms blocks = clicks)
-            if (g_ax_frames == 0 && g_ai_buf && g_ai_len) {
-                std::vector<int16_t> s(g_ai_len / 2);
-                for (uint32_t i = 0; i < g_ai_len / 2; i++) s[i] = (int16_t)R16(g_ai_buf + 2 * i);
-                audio_out(s.data(), (int)(g_ai_len / 4));
-            }
             if (g_ai_cb) guest_call(c, g_ai_cb, {});
             g_ai_inflight--;
         });
+        precise_sleep_until(next);
     }
 }
 void hle_AIStartDMA(Ctx* c) {
