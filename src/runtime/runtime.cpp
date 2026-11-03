@@ -497,6 +497,11 @@ static std::string exe_path(const char* argv0) {
 }
 
 #include "game_setup.h"
+#ifdef _WIN32
+#define EXE_SFX ".exe"
+#else
+#define EXE_SFX ""
+#endif
 #ifndef GAME_SETUP_DISC
 #define GAME_SETUP_DISC 1
 #endif
@@ -531,12 +536,14 @@ int main(int argc, char** argv) {
             if (r > 0) { rootstr = exedir + "game"; fprintf(stderr, "[setup] done\n"); }
             else {
                 std::string msg = r < 0 ? "Could not set up the game from " + used + ":\n" + err
-                    : std::string("Game files not found.\n\nPut your own " GAME_SETUP_WHAT " in the same folder as " GAME_EXE
-                                  ".exe and start it again: the game folder is made from it on the first start.\n\n"
-                                  "(Or start it as: " GAME_EXE ".exe <path to game folder>)");
+                    : std::string("Game files not found.\n\nPut your own " GAME_SETUP_WHAT " in the same folder as " GAME_EXE EXE_SFX
+                                  " and start it again: the game folder is made from it on the first start.\n\n"
+                                  "(Or start it as: " GAME_EXE EXE_SFX " <path to game folder>)");
                 fprintf(stderr, "%s\n", msg.c_str());
 #ifdef _WIN32
                 MessageBoxA(nullptr, msg.c_str(), GAME_NAME, MB_ICONERROR);
+#elif defined(USE_SDL)
+                { extern void sdl_error_box(const char*, const char*); sdl_error_box(GAME_NAME, msg.c_str()); }
 #endif
                 return 1;
             }
