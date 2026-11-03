@@ -47,6 +47,14 @@ Dungeon). First game on the Dec 2009 RVL SDK, and the first without dtk.
 - **Red ENERGIZE.** `src/redfix` is dltfix's stage 1 on the game folder (see runtime/dlt_red.cpp): files are
   identified by SHA-1, retail blue ones rebuilt, already-red ones kept, output checked against the dltfix
   reference SHA-1s. Built as C with -ffp-contract=off -fno-fast-math (bit-exact).
+- **Title standee.** The title screen's Dirk standee was cut out with two white gaps (under his left arm,
+  between his right arm and the sword hilt). Dirk is part of 01 - Opening.mo, 01 - TRANS Opening.mo (fade
+  + focus pull) and 02 - TRANS Game Selection(+Reverse) (camera zoom). `src/redfix/dirkfix.c` models every
+  frame as gain * blur(warped title frame) + offset (zoom tracked per frame, blur and gain fitted), puts the
+  modelled fixed title frame in the gaps, and re-encodes the four movies (reference SHA-1s checked).
+  Marker game/title_standee.ok; the retail title movie is kept as 01 - Opening.mo.retail.
+- **File table.** Rebuilt movies change size, but the game takes sizes and offsets from fst.bin: dvd_init
+  now lays the files out again from their real sizes (a grown file was read short and the movie stalled).
 - **Input.** Sideways Wii Remote mapping (screen up = remote RIGHT); no pointer.
 
 ## Testing notes

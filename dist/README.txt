@@ -2,7 +2,8 @@ Dragon's Lair Trilogy (Wii) - native Windows build (static recompilation)  @VERS
 https://github.com/darkuni/dragons-lair-trilogy-recomp
 
 Dragon's Lair, Dragon's Lair II: Time Warp and Space Ace, running as native code - with Space Ace's
-ENERGIZE scenes restored to the arcade's red (the Wii release re-graded them blue).
+ENERGIZE scenes restored to the arcade's red (the Wii release re-graded them blue), and the
+white gaps in the title screen's Dirk standee filled in.
 
 No game data is included. You need your own Dragon's Lair Trilogy disc image (Wii, NTSC-U, SL3ENR)
 as .iso or .ciso.
@@ -33,6 +34,7 @@ Files
   dltrilogy.log        log of the last run - include it with bug reports
   dltrilogy_hang.txt   written if no frame is shown for 8 seconds - include it too
   game\red_energize.ok written once the red scenes are in place (delete it to check them again)
+  game\title_standee.ok written once the title-screen standee is fixed
   nand\                saves and high scores
 
 Unofficial fan project, not affiliated with Digital Leisure, Destineer, Don Bluth or Nintendo.

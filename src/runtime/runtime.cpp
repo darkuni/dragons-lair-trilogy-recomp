@@ -552,6 +552,7 @@ int main(int argc, char** argv) {
     const char* root = rootstr.c_str();
 #ifdef GAME_RED_ENERGIZE
     { extern void dlt_red_energize(const std::string&); dlt_red_energize(rootstr); }
+    { extern void dlt_dirk_standee(const std::string&); dlt_dirk_standee(rootstr); }
 #endif
 #ifdef _WIN32
     {   // log to targetterror.log next to the exe (the console only gets the config line)

@@ -29,6 +29,33 @@ void dvd_init(const char* root) {
     auto fst = slurp(g_root + "/sys/fst.bin");
     if (fst.empty()) { fprintf(g_log, "[dvd] no fst.bin\n"); return; }
     uint32_t sz = (uint32_t)fst.size();
+    {   // Files in the game folder may differ in size from the disc (Dragon's Lair Trilogy rebuilds some
+        // movies on the first start). Lay the files out again from their real sizes, so the game reads
+        // each one whole and no file runs into the next one's offsets.
+        uint32_t n = be(&fst[8]);
+        const char* names = (const char*)&fst[n * 12];
+        std::vector<uint32_t> ends{n};
+        std::vector<std::string> paths{""};
+        uint64_t cursor = ~0ull;
+        for (uint32_t i = 1; i < n; i++) { const uint8_t* e = &fst[i * 12]; if (!e[0]) cursor = std::min<uint64_t>(cursor, (uint64_t)be(e + 4) << 2); }
+        int changed = 0;
+        for (uint32_t i = 1; i < n; i++) {
+            while (i >= ends.back()) { ends.pop_back(); paths.pop_back(); }
+            uint8_t* e = &fst[i * 12];
+            std::string full = paths.back() + "/" + (names + (be(e) & 0xFFFFFF));
+            if (e[0]) { ends.push_back(be(e + 8)); paths.push_back(full); continue; }
+            uint32_t size = be(e + 8);
+            if (FILE* f = fopen((g_root + "/files" + full).c_str(), "rb")) {
+                fseek(f, 0, SEEK_END); long l = ftell(f); fclose(f);
+                if (l >= 0 && (uint32_t)l != size) { size = (uint32_t)l; changed++; }
+            }
+            uint32_t o = (uint32_t)(cursor >> 2);
+            e[4] = o >> 24; e[5] = o >> 16; e[6] = o >> 8; e[7] = o;
+            e[8] = size >> 24; e[9] = size >> 16; e[10] = size >> 8; e[11] = size;
+            cursor += ((uint64_t)size + 0x7FFF) & ~0x7FFFull;
+        }
+        if (changed) fprintf(g_log, "[dvd] %d files differ in size from the disc: file table laid out again\n", changed);
+    }
     uint32_t addr = (0x81800000u - 0x2000u - sz) & ~31u;
     memcpy(MEM + addr, fst.data(), sz);
     W32(0x80000038u, addr);
