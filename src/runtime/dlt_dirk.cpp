@@ -32,7 +32,7 @@ void dlt_dirk_standee(const std::string& root) {
     namespace fs = std::filesystem;
     std::error_code ec;
     std::string marker = root + "/title_standee.ok", dir = root + "/files/Content16";
-    static const char* REV = "standee fix revision 2";
+    static const char* REV = "standee fix revision 3";
     {   // done already with this revision?
         std::vector<uint8_t> m;
         if (slurp(marker, m) && std::string(m.begin(), m.end()).find(REV) != std::string::npos) return;

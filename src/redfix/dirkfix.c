@@ -50,10 +50,10 @@ static const xform ZOOM[] = {
 #include "dirkfix.h"
 enum { STATIC = 0, ZOOM_FWD = 1, ZOOM_REV = 2 };
 const dirk_file DIRK_FILES[] = {
-    {"01 - Opening",                       114876,  "70cf4a30b841db09926f28ccbcd3aa0cdbfc4e41", STATIC, "1b8feff2f9b6630e10e9db3bb403f0e6ab524c01"},
-    {"01 - TRANS Opening",                 214496,  "1f9fca55763e19950fc040a77ec60c4e5f51d6f5", STATIC, "2da5b4e45fa42224b282c52e362d32e4194db15c"},
-    {"02 - TRANS Game Selection",          1361520, "97118702f3dada0625601cc58379204b508d8096", ZOOM_FWD, "2a3cfd2ec74dfa39f83767efa7565650112b0f69"},
-    {"02 - TRANS Game Selection Reverse",  1342500, "fb499fd67dbb37be954d15d290263fb963978bc0", ZOOM_REV, "be31e904abd717eb5e0b7a98bb2f5da94d069f6d"},
+    {"01 - Opening",                       114876,  "70cf4a30b841db09926f28ccbcd3aa0cdbfc4e41", STATIC, "cb12f34f2fb60830b401d2914c053c5bfe09f0dc"},
+    {"01 - TRANS Opening",                 214496,  "1f9fca55763e19950fc040a77ec60c4e5f51d6f5", STATIC, "a40746338cbdd930376048177037eacd99754c68"},
+    {"02 - TRANS Game Selection",          1361520, "97118702f3dada0625601cc58379204b508d8096", ZOOM_FWD, "b64084dae6c855ed3919e9659279d7385e4ec745"},
+    {"02 - TRANS Game Selection Reverse",  1342500, "fb499fd67dbb37be954d15d290263fb963978bc0", ZOOM_REV, "493502a64d62687e1d622ec4467896e35fd947c6"},
 };
 const int DIRK_NFILES = 4;
 
