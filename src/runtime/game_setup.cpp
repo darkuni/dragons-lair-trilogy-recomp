@@ -5,6 +5,9 @@
 //         when compressed), dlc/{tmd.bin,ticket.bin,content/*.app} for an add-on title (00010005)
 //   disc: sys/{ticket.bin,tmd.bin,boot.bin,bi2.bin,main.dol,fst.bin} and files/ (game partition)
 #include "game_setup.h"
+#ifndef GAME_SETUP_TOOL
+#include "setup_ui.h"
+#endif
 #include <cstdio>
 #include <cstdint>
 #include <cstring>
@@ -377,6 +380,9 @@ bool disc_unpack(const fs::path& img, const fs::path& out, std::string& err, std
     fs::create_directories(out / "files", ec);
     std::vector<uint8_t> buf(1 << 22);
     for (uint32_t i = 1; i < n; i++) {
+#ifndef GAME_SETUP_TOOL
+        if ((i & 15) == 0 || i + 1 == n) setup_progress((int)i + 1, (int)n);
+#endif
         while (i >= stack.back().first) stack.pop_back();
         const uint8_t* e = fst.data() + i * 12;
         uint32_t no = be32(e) & 0xFFFFFF, a = be32(e + 4), b = be32(e + 8);
@@ -441,7 +447,11 @@ int game_setup_auto(const std::string& exedir, const std::string& game_dir, bool
     if (disc_game) {
         if (images.empty()) return 0;
         used = images[0].filename().string();
-        fprintf(stderr, "[setup] extracting %s into %s (first start only)...\n", used.c_str(), game_dir.c_str());
+#ifndef GAME_SETUP_TOOL
+        setup_closable(false);   // a half-made game folder would be taken as complete on the next start
+        setup_stage("Extracting the game from %s", used.c_str());
+        setup_say("[setup] extracting %s into %s (first start only)...", used.c_str(), game_dir.c_str());
+#endif
         return game_setup_from_disc(images[0].string(), game_dir, err) ? 1 : -1;
     }
     std::string base, dlc;
@@ -454,7 +464,11 @@ int game_setup_auto(const std::string& exedir, const std::string& game_dir, bool
     }
     if (base.empty()) return 0;
     used = fs::path(base).filename().string() + (dlc.empty() ? "" : " + " + fs::path(dlc).filename().string());
-    fprintf(stderr, "[setup] unpacking %s into %s (first start only)...\n", used.c_str(), game_dir.c_str());
+#ifndef GAME_SETUP_TOOL
+    setup_closable(false);
+    setup_stage("Unpacking %s", used.c_str());
+    setup_say("[setup] unpacking %s into %s (first start only)...", used.c_str(), game_dir.c_str());
+#endif
     return game_setup_from_wad(base, dlc, game_dir, err) ? 1 : -1;
 }
 

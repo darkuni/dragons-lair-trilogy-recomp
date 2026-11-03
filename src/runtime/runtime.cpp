@@ -497,6 +497,7 @@ static std::string exe_path(const char* argv0) {
 }
 
 #include "game_setup.h"
+#include "setup_ui.h"
 #ifdef _WIN32
 #define EXE_SFX ".exe"
 #else
@@ -514,6 +515,9 @@ int main(int argc, char** argv) {
     std::string exe = exe_path(argv[0]);
     std::string exedir = exe.substr(0, exe.find_last_of("/\\") + 1);
     std::string rootstr;
+    std::string setup_msg;   // set when the game folder could not be found or made
+    // first-start work runs on a helper thread while this thread shows a progress window
+    setup_ui_run([&] {
     if (argc > 1) rootstr = argv[1];
     else {
         const char* cands[] = {"game", "../game", "../../game", "../../../game"};
@@ -533,27 +537,32 @@ int main(int argc, char** argv) {
             // first start: make the game folder from the player's own WAD / disc image next to the exe
             std::string err, used;
             int r = game_setup_auto(exedir, exedir + "game", GAME_SETUP_DISC != 0, err, used);
-            if (r > 0) { rootstr = exedir + "game"; fprintf(stderr, "[setup] done\n"); }
+            if (r > 0) { rootstr = exedir + "game"; setup_say("[setup] done"); }
             else {
-                std::string msg = r < 0 ? "Could not set up the game from " + used + ":\n" + err
+                setup_msg = r < 0 ? "Could not set up the game from " + used + ":\n" + err
                     : std::string("Game files not found.\n\nPut your own " GAME_SETUP_WHAT " in the same folder as " GAME_EXE EXE_SFX
                                   " and start it again: the game folder is made from it on the first start.\n\n"
                                   "(Or start it as: " GAME_EXE EXE_SFX " <path to game folder>)");
-                fprintf(stderr, "%s\n", msg.c_str());
-#ifdef _WIN32
-                MessageBoxA(nullptr, msg.c_str(), GAME_NAME, MB_ICONERROR);
-#elif defined(USE_SDL)
-                { extern void sdl_error_box(const char*, const char*); sdl_error_box(GAME_NAME, msg.c_str()); }
-#endif
-                return 1;
+                return;
             }
         }
     }
-    const char* root = rootstr.c_str();
 #ifdef GAME_RED_ENERGIZE
     { extern void dlt_red_energize(const std::string&); dlt_red_energize(rootstr); }
     { extern void dlt_dirk_standee(const std::string&); dlt_dirk_standee(rootstr); }
 #endif
+    });
+    if (!setup_msg.empty()) {
+        const std::string& msg = setup_msg;
+        fprintf(stderr, "%s\n", msg.c_str());
+#ifdef _WIN32
+        MessageBoxA(nullptr, msg.c_str(), GAME_NAME, MB_ICONERROR);
+#elif defined(USE_SDL)
+        { extern void sdl_error_box(const char*, const char*); sdl_error_box(GAME_NAME, msg.c_str()); }
+#endif
+        return 1;
+    }
+    const char* root = rootstr.c_str();
 #ifdef _WIN32
     {   // log to targetterror.log next to the exe (the console only gets the config line)
         std::string lp = exedir + GAME_EXE ".log";

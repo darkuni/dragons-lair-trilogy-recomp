@@ -11,7 +11,7 @@ as .iso or .ciso.
 Setup
   Put your disc image (.iso or .ciso) in this folder and run dltrilogy.exe. On the first start it
   builds the "game" folder from it (a few minutes - the disc is 4.4 GB), then rebuilds the 32 Space Ace
-  ENERGIZE scenes in red (a minute or two, shown in the console window). After that the disc image
+  ENERGIZE scenes in red and fixes the title screen (a minute or two, shown in a setup window). After that the disc image
   isn't needed any more. A disc already patched with dltfix works too (nothing to rebuild).
 
 Requirements: 64-bit Windows 10/11, a GPU with OpenGL 3.3.

@@ -14,6 +14,7 @@ extern "C" {
 #include <vector>
 #include <atomic>
 #include <filesystem>
+#include "setup_ui.h"
 
 static bool slurp(const std::string& p, std::vector<uint8_t>& d) {
     FILE* f = fopen(p.c_str(), "rb"); if (!f) return false;
@@ -46,14 +47,17 @@ void dlt_dirk_standee(const std::string& root) {
         if (slurp(b, d) && sha(d.data(), d.size()) == DIRK_FILES[i].sha1) continue;
         if (slurp(p, d) && sha(d.data(), d.size()) == DIRK_FILES[i].sha1) { spill(b, d.data(), d.size()); continue; }
         d.clear(); missing++;
-        fprintf(stderr, "[dirk] %s: no retail copy (rebuilt by an older version?) - delete the game folder to rebuild it from the disc\n", DIRK_FILES[i].name);
+        setup_say("[dirk] %s: no retail copy (rebuilt by an older version?) - delete the game folder to rebuild it from the disc", DIRK_FILES[i].name);
     }
     if (missing == DIRK_NFILES || src[0].empty()) return;
     const std::vector<uint8_t>& t = src[0];
     if (!dlt_dirkfix_template_from_movie(t.data(), t.size())) { fprintf(stderr, "[dirk] cannot decode the title movie\n"); return; }
     mobienc_init();
-    fprintf(stderr, "Fixing the white gaps in the title screen's Dirk standee (first start only)...\n");
-    std::atomic<int> fixed{0}, already{0}, failed{0}, mismatch{0};
+    setup_closable(true);
+    setup_stage("Fixing the title screen's Dirk standee");
+    setup_say("Fixing the white gaps in the title screen's Dirk standee (first start only)...");
+    std::atomic<int> fixed{0}, already{0}, failed{0}, mismatch{0}, ndone{0};
+    setup_progress(0, DIRK_NFILES);
     std::vector<std::thread> th;
     for (int i = 0; i < DIRK_NFILES; i++) th.emplace_back([&, i] {
         const dirk_file& df = DIRK_FILES[i];
@@ -63,16 +67,17 @@ void dlt_dirk_standee(const std::string& root) {
         const std::vector<uint8_t>& d = src[i];
         if (d.empty()) { failed++; return; }
         size_t ol = 0; uint8_t* o = dlt_dirkfix(i, d.data(), d.size(), &ol, nullptr, 0);
-        if (!o) { fprintf(stderr, "[dirk] %s: FAILED\n", df.name); failed++; return; }
+        if (!o) { setup_say("[dirk] %s: FAILED", df.name); failed++; return; }
         if (sha(o, ol) != df.ref) mismatch++;
         std::string tmp = p + ".tmp";
         bool ok = spill(tmp, o, ol);
         free(o);
         if (ok) { fs::remove(p, ec); fs::rename(tmp, p, ec); ok = !ec; }
-        if (ok) { fixed++; fprintf(stderr, "[dirk] %s fixed\n", df.name); } else failed++;
+        if (ok) { fixed++; setup_say("[dirk] %s fixed", df.name); } else failed++;
+        setup_progress(++ndone, DIRK_NFILES);
     });
     for (auto& x : th) x.join();
-    fprintf(stderr, "[dirk] %d fixed, %d already fixed, %d failed%s\n", (int)fixed, (int)already, (int)failed,
+    setup_say("[dirk] %d fixed, %d already fixed, %d failed%s", (int)fixed, (int)already, (int)failed,
             mismatch ? " (output differs from the reference build: please report)" : "");
     if (!failed)
         if (FILE* f = fopen(marker.c_str(), "w")) {

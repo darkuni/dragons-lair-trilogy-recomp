@@ -11,9 +11,10 @@ as .iso or .ciso.
 Setup (Steam Deck: do this in Desktop Mode)
   1. Extract this folder somewhere you can write to (e.g. ~/Games/DLTrilogy).
   2. Put your disc image (.iso or .ciso) in the same folder.
-  3. Run ./dltrilogy once from a terminal (Konsole on the Deck): the first start builds the "game"
-     folder from the image (a few minutes) and rebuilds the 32 Space Ace ENERGIZE scenes in red
-     (a few minutes on the Deck), with progress in the terminal. After that the image isn't needed.
+  3. Run dltrilogy (double-click it in Dolphin, or ./dltrilogy in a terminal). The first start builds
+     the "game" folder from the image, rebuilds the 32 Space Ace ENERGIZE scenes in red and fixes the
+     title screen - 10 minutes or more on the Deck. A setup window shows the progress; the game
+     starts by itself when it's done. After that the image isn't needed.
   4. For Game Mode: Steam > Add a Non-Steam Game > browse to dltrilogy. The Deck's controls work as a
      gamepad (see below).
 

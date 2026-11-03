@@ -3,6 +3,7 @@
 // (or when the marker file is missing) the scenes are rebuilt from the player's own files with the
 // same code as the dltfix disc patcher (src/redfix), then game/red_energize.ok is written.
 #include "redfix/redfix.h"
+#include "setup_ui.h"
 #include <cstdio>
 #include <string>
 #include <thread>
@@ -10,7 +11,8 @@
 #include <filesystem>
 
 static void progress(int done, int total, const char* name, const char* what, void*) {
-    fprintf(stderr, "[red] %2d/%d  %-11s %s\n", done, total, name, what);
+    setup_progress(done, total);
+    setup_say("[red] %2d/%d  %-11s %s", done, total, name, what);
 }
 
 void dlt_red_energize(const std::string& root) {
@@ -22,12 +24,15 @@ void dlt_red_energize(const std::string& root) {
     if (!fs::exists(content + "/SAScene4.mo", ec)) return;   // not this game's folder layout
     unsigned th = std::thread::hardware_concurrency();
     if (th == 0) th = 4;
-    fprintf(stderr, "\nRestoring Space Ace's red ENERGIZE scenes (first start only, about a minute)...\n");
+    setup_closable(true);
+    setup_stage("Restoring Space Ace's red ENERGIZE scenes (%u threads)", th);
+    setup_progress(0, 32);
+    setup_say("Restoring Space Ace's red ENERGIZE scenes (first start only; a minute on a fast PC, several on a Steam Deck)...");
     auto t0 = std::chrono::steady_clock::now();
     dlt_redfix_result r{};
     int n = dlt_redfix(content.c_str(), (int)th, progress, nullptr, &r);
     double s = std::chrono::duration<double>(std::chrono::steady_clock::now() - t0).count();
-    fprintf(stderr, "[red] done in %.0f s: %d restored, %d already red, %d skipped, %d failed%s\n\n", s, r.rebuilt, r.already,
+    setup_say("[red] done in %.0f s: %d restored, %d already red, %d skipped, %d failed%s", s, r.rebuilt, r.already,
             r.skipped, r.failed, r.mismatch ? " (output differs from the reference build: please report)" : "");
     if (n >= 0 && r.skipped == 0) {
         if (FILE* f = fopen(marker.c_str(), "w")) {
