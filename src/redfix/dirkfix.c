@@ -6,7 +6,7 @@
  * pixels are blended to the board's tone (sampled from the same frame, so fades keep working), and the
  * movie is re-encoded with the same encoder as the red ENERGIZE scenes.
  *
- * The mask comes from the title frame (dirkmask.inc). In the Game Selection transitions the camera zooms
+ * The fixed title frame is the retail frame with darkuni's touch-up blended in (dirkedit.inc). In the Game Selection transitions the camera zooms
  * in on the cabinets; per-frame scale/offset (tracked from the retail frames) map the mask onto Dirk.
  */
 #include "dirkfix.h"
@@ -14,6 +14,7 @@
 #include "mobidec.h"
 #include "mobienc.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <math.h>
 
@@ -22,6 +23,12 @@ static const mpx MASK[] = {
 #include "dirkmask.inc"
 };
 #define NMASK ((int)(sizeof MASK / sizeof MASK[0]))
+/* The fixed title frame: the retail frame with this touch-up blended in (alpha, target Y/Cb/Cr). */
+typedef struct { short x, y; unsigned char a, Y, U, V; } epx;
+static const epx EDIT[] = {
+#include "dirkedit.inc"
+};
+#define NEDIT ((int)(sizeof EDIT / sizeof EDIT[0]))
 #define TX0 80.0   /* template origin: frame point = (cx + s*(x-TX0), cy + s*(y-TY0)) */
 #define TY0 150.0
 #define REFX 96.0  /* a point on the dark standee board in the title frame */
@@ -43,10 +50,10 @@ static const xform ZOOM[] = {
 #include "dirkfix.h"
 enum { STATIC = 0, ZOOM_FWD = 1, ZOOM_REV = 2 };
 const dirk_file DIRK_FILES[] = {
-    {"01 - Opening",                       114876,  "70cf4a30b841db09926f28ccbcd3aa0cdbfc4e41", STATIC, "37571cc3bb481b8837c45e42bd71a026dc04d835"},
-    {"01 - TRANS Opening",                 214496,  "1f9fca55763e19950fc040a77ec60c4e5f51d6f5", STATIC, "1157d884089b77dbdf61c96c07f55dbd4a796844"},
-    {"02 - TRANS Game Selection",          1361520, "97118702f3dada0625601cc58379204b508d8096", ZOOM_FWD, "29d277d07c0a3813cb808044d76aadead6d33a96"},
-    {"02 - TRANS Game Selection Reverse",  1342500, "fb499fd67dbb37be954d15d290263fb963978bc0", ZOOM_REV, "d0fafbda37fd84f38f172f5ae4183db765a7b6f6"},
+    {"01 - Opening",                       114876,  "70cf4a30b841db09926f28ccbcd3aa0cdbfc4e41", STATIC, "1b8feff2f9b6630e10e9db3bb403f0e6ab524c01"},
+    {"01 - TRANS Opening",                 214496,  "1f9fca55763e19950fc040a77ec60c4e5f51d6f5", STATIC, "2da5b4e45fa42224b282c52e362d32e4194db15c"},
+    {"02 - TRANS Game Selection",          1361520, "97118702f3dada0625601cc58379204b508d8096", ZOOM_FWD, "2a3cfd2ec74dfa39f83767efa7565650112b0f69"},
+    {"02 - TRANS Game Selection Reverse",  1342500, "fb499fd67dbb37be954d15d290263fb963978bc0", ZOOM_REV, "be31e904abd717eb5e0b7a98bb2f5da94d069f6d"},
 };
 const int DIRK_NFILES = 4;
 
@@ -116,7 +123,7 @@ static int patch_frame(uint8_t *yuv, int w, int h, float s, float cx, float cy, 
  * over to the patch, and pixels that don't show the gap are left alone. */
 #define BX0 84
 #define BX1 212
-#define BY0 156
+#define BY0 140
 #define BY1 236
 static float TYo[480][640], TD[480][640], TA[480][640], TDU[240][320], TDV[240][320];
 static int have_template = 0;
@@ -125,12 +132,26 @@ void dlt_dirkfix_set_template(const uint8_t *title_frame0) {
     const int w = 640, h = 480;
     static uint8_t fixed[640 * 480 * 3 / 2];
     memcpy(fixed, title_frame0, sizeof fixed);
-    float ref = -1.f;
-    patch_frame(fixed, w, h, 1.f, (float)TX0, (float)TY0, &ref);
+    {   /* apply the touch-up: luma per pixel, chroma per 2x2 block (alpha-weighted target, max alpha) */
+        static float cu[240][320], cv[240][320], cw[240][320], ca[240][320];
+        memset(cu, 0, sizeof cu); memset(cv, 0, sizeof cv); memset(cw, 0, sizeof cw); memset(ca, 0, sizeof ca);
+        for (int k = 0; k < NEDIT; k++) {
+            const epx *e = &EDIT[k]; float a = e->a / 255.f; int i = e->y * w + e->x;
+            fixed[i] = (uint8_t)lroundf(fixed[i] * (1 - a) + e->Y * a);
+            int cx = e->x / 2, cy = e->y / 2;
+            cu[cy][cx] += a * e->U; cv[cy][cx] += a * e->V; cw[cy][cx] += a; if (a > ca[cy][cx]) ca[cy][cx] = a;
+        }
+        uint8_t *U = fixed + w * h, *V = U + (w / 2) * (h / 2);
+        for (int y = 0; y < h / 2; y++) for (int x = 0; x < w / 2; x++) if (cw[y][x] > 0) {
+            float a = ca[y][x]; int i = y * (w / 2) + x;
+            U[i] = (uint8_t)lroundf(U[i] * (1 - a) + (cu[y][x] / cw[y][x]) * a);
+            V[i] = (uint8_t)lroundf(V[i] * (1 - a) + (cv[y][x] / cw[y][x]) * a);
+        }
+    }
     const uint8_t *Y = title_frame0, *U = Y + w * h, *V = U + (w / 2) * (h / 2);
     const uint8_t *Yf = fixed, *Uf = Yf + w * h, *Vf = Uf + (w / 2) * (h / 2);
     for (int y = 0; y < h; y++) for (int x = 0; x < w; x++) { TYo[y][x] = Y[y * w + x]; TD[y][x] = (float)Yf[y * w + x] - Y[y * w + x]; TA[y][x] = 0; }
-    for (int k = 0; k < NMASK; k++) TA[MASK[k].y][MASK[k].x] = MASK[k].a / 255.f;
+    for (int k = 0; k < NEDIT; k++) TA[EDIT[k].y][EDIT[k].x] = EDIT[k].a / 255.f;
     for (int y = 0; y < h / 2; y++) for (int x = 0; x < w / 2; x++) {
         TDU[y][x] = (float)Uf[y * (w / 2) + x] - U[y * (w / 2) + x];
         TDV[y][x] = (float)Vf[y * (w / 2) + x] - V[y * (w / 2) + x];
@@ -191,6 +212,7 @@ static void patch_frame_model(uint8_t *yuv, int w, int h, float s, float cx, flo
         double res = sff - 2 * g * sbf - 2 * o * sf + g * g * sbb + 2 * g * o * sb + o * o * n;
         if (res < best) { best = (float)res; bs = sg; bg = (float)g; bo = (float)o; }
     }
+    if (getenv("DIRKLOG")) fprintf(stderr, "[dirk] s %.3f sigma %.1f g %.3f o %.1f\n", s, bs, bg, bo);
     if (bg <= 0.02f) { free(T); return; }          /* faded to black: nothing to fix */
     /* inside the gap: the model's clean prediction of the fixed frame (removes the white area's grain);
        towards the edges: the original plus the blurred difference */
@@ -199,12 +221,11 @@ static void patch_frame_model(uint8_t *yuv, int w, int h, float s, float cx, flo
     gauss(Dl, W, H, bs, tmp);
     gauss(Al, W, H, bs, tmp);
     for (int y = 0; y < H; y++) for (int x = 0; x < W; x++) {
-        float d = bg * Dl[y * W + x]; if (d > -0.5f) continue;
+        float d = bg * Dl[y * W + x]; if (fabsf(d) < 0.5f) continue;
         int i = (fy0 + y) * w + fx0 + x;
         float add = Y[i] + d, rep = bg * Fx[y * W + x] + bo, a = Al[y * W + x] * 1.5f;
         if (a > 1.f) a = 1.f;
         float v = add * (1 - a) + rep * a;
-        if (v > Y[i]) v = Y[i];                          /* the fix only ever darkens the white gap */
         int iv = (int)lroundf(v); Y[i] = (uint8_t)(iv < 0 ? 0 : iv > 255 ? 255 : iv);
     }
     /* chroma at half resolution, same model (sigma halves) */

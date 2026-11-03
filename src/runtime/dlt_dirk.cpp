@@ -1,7 +1,7 @@
 // Dragon's Lair Trilogy: title-screen Dirk standee fix (once). The standee on the title screen and the
 // transitions into and out of it was cut out with two white gaps; src/redfix/dirkfix.c rebuilds those
-// four movies with the gaps showing the dark standee board. The retail title movie is kept as
-// "01 - Opening.mo.retail" (the fix is modelled on its first frame); game/title_standee.ok marks it done.
+// four movies with darkuni's touch-up. Each retail movie is kept as "<name>.mo.retail", so a later
+// revision of the fix can be applied again; game/title_standee.ok records the revision applied.
 extern "C" {
 #include "redfix/dirkfix.h"
 #include "redfix/crypto.h"
@@ -32,16 +32,24 @@ void dlt_dirk_standee(const std::string& root) {
     namespace fs = std::filesystem;
     std::error_code ec;
     std::string marker = root + "/title_standee.ok", dir = root + "/files/Content16";
-    if (fs::exists(marker, ec)) return;
-    std::string title = dir + "/01 - Opening.mo", retail = title + ".retail";
-    std::vector<uint8_t> t;
-    if (!(slurp(retail, t) && sha(t.data(), t.size()) == DIRK_FILES[0].sha1)) {
-        if (!(slurp(title, t) && sha(t.data(), t.size()) == DIRK_FILES[0].sha1)) {
-            fprintf(stderr, "[dirk] title movie is not the retail version: standee fix skipped\n");
-            return;
-        }
-        spill(retail, t.data(), t.size());
+    static const char* REV = "standee fix revision 2";
+    {   // done already with this revision?
+        std::vector<uint8_t> m;
+        if (slurp(marker, m) && std::string(m.begin(), m.end()).find(REV) != std::string::npos) return;
     }
+    // retail source of every movie: the .retail backup, or the file itself while it is still retail
+    std::vector<std::vector<uint8_t>> src(DIRK_NFILES);
+    int missing = 0;
+    for (int i = 0; i < DIRK_NFILES; i++) {
+        std::string p = dir + "/" + DIRK_FILES[i].name + ".mo", b = p + ".retail";
+        std::vector<uint8_t>& d = src[i];
+        if (slurp(b, d) && sha(d.data(), d.size()) == DIRK_FILES[i].sha1) continue;
+        if (slurp(p, d) && sha(d.data(), d.size()) == DIRK_FILES[i].sha1) { spill(b, d.data(), d.size()); continue; }
+        d.clear(); missing++;
+        fprintf(stderr, "[dirk] %s: no retail copy (rebuilt by an older version?) - delete the game folder to rebuild it from the disc\n", DIRK_FILES[i].name);
+    }
+    if (missing == DIRK_NFILES || src[0].empty()) return;
+    const std::vector<uint8_t>& t = src[0];
     if (!dlt_dirkfix_template_from_movie(t.data(), t.size())) { fprintf(stderr, "[dirk] cannot decode the title movie\n"); return; }
     mobienc_init();
     fprintf(stderr, "Fixing the white gaps in the title screen's Dirk standee (first start only)...\n");
@@ -50,12 +58,10 @@ void dlt_dirk_standee(const std::string& root) {
     for (int i = 0; i < DIRK_NFILES; i++) th.emplace_back([&, i] {
         const dirk_file& df = DIRK_FILES[i];
         std::string p = dir + "/" + df.name + ".mo";
-        std::vector<uint8_t> d;
-        if (!slurp(p, d)) { failed++; return; }
-        std::string h = sha(d.data(), d.size());
-        if (h == df.ref) { already++; return; }
-        if (i == 0) d = t;                                  // the title: always from the retail bytes
-        else if (h != df.sha1) { fprintf(stderr, "[dirk] %s: unknown version, left as is\n", df.name); failed++; return; }
+        std::vector<uint8_t> cur;
+        if (slurp(p, cur) && sha(cur.data(), cur.size()) == df.ref) { already++; return; }
+        const std::vector<uint8_t>& d = src[i];
+        if (d.empty()) { failed++; return; }
         size_t ol = 0; uint8_t* o = dlt_dirkfix(i, d.data(), d.size(), &ol, nullptr, 0);
         if (!o) { fprintf(stderr, "[dirk] %s: FAILED\n", df.name); failed++; return; }
         if (sha(o, ol) != df.ref) mismatch++;
@@ -70,7 +76,7 @@ void dlt_dirk_standee(const std::string& root) {
             mismatch ? " (output differs from the reference build: please report)" : "");
     if (!failed)
         if (FILE* f = fopen(marker.c_str(), "w")) {
-            fprintf(f, "Title-screen Dirk standee gaps fixed. Delete this file to check the movies again on the next start.\n");
+            fprintf(f, "Title-screen Dirk standee fixed (%s). Delete this file to check the movies again on the next start.\n", REV);
             fclose(f);
         }
 }
