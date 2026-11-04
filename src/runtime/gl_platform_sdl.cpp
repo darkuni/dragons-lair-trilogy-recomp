@@ -30,6 +30,11 @@ void sdl_error_box(const char* title, const char* msg) { SDL_ShowSimpleMessageBo
 
 static SDL_Window* g_win = nullptr;
 static SDL_GLContext g_glc = nullptr;
+// The renderer's context is bound to its own hidden window (g_rwin), never to the game window:
+// it moves between emulation threads many times a frame, and on Linux (Mesa) binding a context
+// to a window that another thread is presenting to with vsync is slow (it waits on the swap)
+// and can leave the window black. Windows keeps binding both to the game window, as before.
+static SDL_Window* g_rwin = nullptr;
 static SDL_AudioDeviceID g_audio = 0;
 static SDL_GameController* g_pad = nullptr;
 static GLuint g_present_fbo = 0;
@@ -66,18 +71,24 @@ static bool ui_create() {
     g_win = SDL_CreateWindow(GAME_NAME " (native)", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                              ww, wh, flags);
     if (!g_win) { fprintf(stderr, "[sdl] window failed: %s\n", SDL_GetError()); return false; }
+#ifdef _WIN32
+    g_rwin = g_win;
+#else
+    g_rwin = SDL_CreateWindow(GAME_NAME " (renderer)", 0, 0, 16, 16, SDL_WINDOW_OPENGL | SDL_WINDOW_HIDDEN);
+    if (!g_rwin) { fprintf(stderr, "[sdl] hidden render window failed (%s): using the game window\n", SDL_GetError()); g_rwin = g_win; }
+#endif
     g_present_ctx = SDL_GL_CreateContext(g_win);              // presenter
     if (!g_present_ctx) { fprintf(stderr, "[sdl] GL context failed: %s\n", SDL_GetError()); return false; }
     SDL_GL_SetAttribute(SDL_GL_SHARE_WITH_CURRENT_CONTEXT, 1);
-    g_glc = SDL_GL_CreateContext(g_win);                      // renderer (shares textures/syncs)
+    g_glc = SDL_GL_CreateContext(g_rwin);                     // renderer (shares textures/syncs)
     if (!g_glc) { fprintf(stderr, "[sdl] GL context failed: %s\n", SDL_GetError()); return false; }
-    SDL_GL_MakeCurrent(g_win, g_glc);
+    SDL_GL_MakeCurrent(g_rwin, g_glc);
 #ifdef _WIN32
     if (!gl_load(SDL_GL_GetProcAddress)) return false;
 #endif
     SDL_GL_SetSwapInterval(0);
     fprintf(stderr, "[gl] %s | %s\n", glGetString(GL_RENDERER), glGetString(GL_VERSION));
-    SDL_GL_MakeCurrent(g_win, nullptr);                       // free for the emulation threads
+    SDL_GL_MakeCurrent(g_rwin, nullptr);                      // free for the emulation threads
     // audio: 32 kHz stereo s16, fed from the AX output
     SDL_AudioSpec want = {}, have = {};
     want.freq = 32000; want.format = AUDIO_S16SYS; want.channels = 2; want.samples = 256;
@@ -114,20 +125,43 @@ bool gl_platform_init(int w, int h) {
     return true;
 }
 
+// time spent switching the renderer's context between threads (PERF=1 logs it every 5 s)
+static std::atomic<uint64_t> g_mc_ns{0}, g_mc_n{0};
+static void mc_account(Uint64 t0) {
+    uint64_t dt = SDL_GetPerformanceCounter() - t0;
+    g_mc_ns += dt * 1000000000ull / SDL_GetPerformanceFrequency();
+    uint64_t n = ++g_mc_n;
+    static bool perf = getenv("PERF") != nullptr;
+    static std::atomic<Uint64> last{0};
+    Uint64 now = SDL_GetTicks64();
+    if (perf && now - last.load() > 5000) {
+        last = now;
+        static uint64_t ns0 = 0, n0 = 0;
+        uint64_t ns = g_mc_ns.load();
+        fprintf(stderr, "[perf] GL context switches: %llu in 5 s, %.1f ms total\n",
+                (unsigned long long)(n - n0), (ns - ns0) / 1e6);
+        ns0 = ns; n0 = n;
+    }
+}
+
 void gl_platform_release() {
     if (!t_current) return;
-    SDL_GL_MakeCurrent(g_win, nullptr);
+    Uint64 t0 = SDL_GetPerformanceCounter();
+    SDL_GL_MakeCurrent(g_rwin, nullptr);
     t_current = false;
+    mc_account(t0);
 }
 
 void gl_platform_make_current() {
     if (t_current) return;
-    if (SDL_GL_MakeCurrent(g_win, g_glc) != 0) {
+    Uint64 t0 = SDL_GetPerformanceCounter();
+    if (SDL_GL_MakeCurrent(g_rwin, g_glc) != 0) {
         static int n = 0;
         if (n++ < 5) fprintf(stderr, "[gl] MakeCurrent failed: %s\n", SDL_GetError());
         return;
     }
     t_current = true;
+    mc_account(t0);
 }
 
 void platform_audio_push(const int16_t* lr, int frames) {
